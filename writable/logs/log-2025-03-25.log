@@ -1,0 +1,44 @@
+CRITICAL - 2025-03-25 14:24:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/services/digital_forensics/vehicle-forensics.php"
+[Method: GET, Route: services/vehicle-forensics]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/services/digital_forensics/vehicle-forensics.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('pages/services/digital_forensics/vehicle-forensics', [], true)
+ 3 APPPATH/Controllers/Services.php(47): view('pages/services/digital_forensics/vehicle-forensics', [...])
+ 4 APPPATH/Controllers/Services.php(34): App\Controllers\Services->render('digital_forensics/vehicle-forensics', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Services->vehicle_forensics()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-25 14:53:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/services/digital_forensics/forensic_laboratory_setup.php"
+[Method: GET, Route: services/forensic-laboratory-setup]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/services/digital_forensics/forensic_laboratory_setup.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('pages/services/digital_forensics/forensic_laboratory_setup', [], true)
+ 3 APPPATH/Controllers/Services.php(195): view('pages/services/digital_forensics/forensic_laboratory_setup', [...])
+ 4 APPPATH/Controllers/Services.php(96): App\Controllers\Services->render('digital_forensics/forensic_laboratory_setup', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Services->forensic_laboratory_setup()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-25 15:26:42 --> ErrorException: Undefined variable $nav_title
+[Method: GET, Route: services/financial-crimes-investigation]
+in APPPATH/Views/pages/services/digital_forensics/vehicle_forensics.php on line 29.
+ 1 APPPATH/Views/pages/services/digital_forensics/vehicle_forensics.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nav_title', '/Applications/XAMPP/xamppfiles/htdocs/hexforensics/app/Views/pages/services/digital_forensics/vehicle_forensics.php', 29)
+ 2 SYSTEMPATH/View/View.php(234): include('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/app/Views/pages/services/digital_forensics/vehicle_forensics.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('pages/services/digital_forensics/vehicle_forensics', [], true)
+ 5 APPPATH/Controllers/Services.php(219): view('pages/services/digital_forensics/vehicle_forensics', [...])
+ 6 APPPATH/Controllers/Services.php(34): App\Controllers\Services->render('digital_forensics/vehicle_forensics', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Services->vehicle_forensics()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Services))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')

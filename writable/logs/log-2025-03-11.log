@@ -1,0 +1,246 @@
+CRITICAL - 2025-03-11 10:43:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:43:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:43:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:48:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:48:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:49:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:51:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:53:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:54:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:55:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:56:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:57:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:57:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 10:58:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 11:00:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: images/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: images/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 11:45:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: assets/logo/logo.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: assets/logo/logo.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 15:10:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: assets/logo/loader.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: assets/logo/loader.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 15:10:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: assets/logo/loader.svg]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: assets/logo/loader.svg\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 15:50:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/error_404.php"
+[Method: GET, Route: fraud-investigation]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/error_404.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 3 APPPATH/Config/Routes.php(10): view('errors/error_404')
+ 4 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: fraud-investigation\'.')
+ 5 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')
+CRITICAL - 2025-03-11 15:51:32 --> ErrorException: Undefined variable $page_title
+[Method: GET, Route: fraud-investigation]
+in APPPATH/Views/layout/header.php on line 12.
+ 1 APPPATH/Views/layout/header.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_title', '/Applications/XAMPP/xamppfiles/htdocs/hexforensics/app/Views/layout/header.php', 12)
+ 2 SYSTEMPATH/View/View.php(234): include('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/app/Views/layout/header.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('layout/header.php', [], true)
+ 5 APPPATH/Views/errors/error_404.php(1): view('layout/header.php')
+ 6 SYSTEMPATH/View/View.php(234): include('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/app/Views/errors/error_404.php')
+ 7 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('errors/error_404', [], true)
+ 9 APPPATH/Config/Routes.php(10): view('errors/error_404')
+10 SYSTEMPATH/CodeIgniter.php(955): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'GET: fraud-investigation\'.')
+11 SYSTEMPATH/CodeIgniter.php(364): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+12 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/Applications/XAMPP/xamppfiles/htdocs/hexforensics/public/index.php')

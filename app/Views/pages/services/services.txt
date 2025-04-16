@@ -1,0 +1,74 @@
+--- Service Categories ---
+Digital Forensics
+- Mobile Phone Extraction & Analysis
+- Computer Extraction & Analysis
+- Forensic Audio Video Image Analysis (FAVIA)
+- Drone Extraction & Analysis
+- Vehicle Forensics
+- Forensic Laboratory Setup
+
+
+Cyber Security
+- Penetration Testing
+- Vulnerability Assessment
+- OSINT Investigation
+- Internet Sweeping
+- Cyber Crimes Investigations
+
+
+Fraud Investigation
+- Asset Tracing
+- Electoral Fraud Investigation
+- Cryptocurrency Crimes Investigation
+- Insurance Fraud Investigation
+- Questioned Document Investigation
+- Financial Crimes Investigation
+- Payroll Fraud Investigation
+- Business Email Compromise (BEC) Scams Investigation
+- Healthcare Fraud Investigation
+- Tax Fraud Investigation
+
+
+Intelligence
+- Geolocation Tracking
+- CDR Extraction & Analysis
+- Communication Intelligence (COMINT)
+- Intelligence Gathering (Law Enforcement Support)
+
+
+Training & Education
+
+
+
+
+--- Services ---
+
+Mobile Device Extraction
+Vehicle Forensics
+Forensic Laboratory Setup
+CDR Extraction & Analysis
+Internet Sweeping
+Healthcare Fraud Investigation
+OSINT Investigation
+Cyber Crimes Investigations
+Due Diligence
+Business Email Compromise (BEC) Scams Investigation
+Geolocation Tracking
+Drone Extraction & Analysis
+Assets Tracing & Recovery
+Payroll Fraud Investigation
+Electoral Fraud Examination
+Cryptocurrency Crimes Investigation
+Financial Crimes Investigation
+Fraud Examination
+Questioned Document Investigation
+Tax Fraud Investigation
+Insurance Fraud Investigation
+Intelligence Gathering (Law Enforcement Support)
+Multimedia (Image & Video) Analysis
+
+
+// Partner LOGO
+Police, DSS, Army, Airforce, Navy, DIA (All Military Logos)
+
+// 
