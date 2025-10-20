@@ -15,7 +15,7 @@
                 overflow: hidden;
                 /* background-color: #111; */
                 background-color: white;
-                padding: 20px 0;
+                padding: 40px 0;
                 position: relative;
                 white-space: nowrap;
                 display: flex;
@@ -24,13 +24,13 @@
             .partner-logos .logos {
                 display: flex;
                 align-items: center;
-                animation: scroll 15s linear infinite;
+                animation: scroll 30s linear infinite;
             }
 
             .partner-logos .logos img {
                 height: 50px; /* Adjust logo size */
                 /* width: 70px;  */
-                margin: 0 15px;
+                margin: 0 20px;
             }
 
             /* Pause animation on hover */
@@ -73,61 +73,37 @@
             });
         </script>
 
+        <!-- Partner Logos Section Start -->
         <div style="width: 100%; height: 4px; background-color: #ca912a"> </div>
         <div class="partner-logos">
             <div class="logos">
                 <div style="width: 100px"></div>
-                <img src="<?= base_url('assets/partners/dss.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/navy.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/dia.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/npf.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/airforce.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/army.png');?>" alt="Logo">
-                <!-- Duplication -->
-                <img src="<?= base_url('assets/partners/dss.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/navy.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/dia.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/npf.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/airforce.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/army.png');?>" alt="Logo">
-                <!-- Duplication -->
-                <img src="<?= base_url('assets/partners/dss.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/navy.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/dia.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/npf.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/airforce.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/army.png');?>" alt="Logo">
-                <!-- Duplication -->
-                <img src="<?= base_url('assets/partners/dss.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/navy.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/dia.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/npf.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/airforce.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/army.png');?>" alt="Logo">
-                <!-- Duplication -->
-                <img src="<?= base_url('assets/partners/dss.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/navy.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/dia.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/npf.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/airforce.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/army.png');?>" alt="Logo">
-                <!-- Duplication -->
-                <img src="<?= base_url('assets/partners/dss.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/navy.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/dia.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/npf.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/airforce.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/army.png');?>" alt="Logo">
-                <!-- Duplication -->
-                <img src="<?= base_url('assets/partners/dss.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/navy.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/dia.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/npf.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/airforce.png');?>" alt="Logo">
-                <img src="<?= base_url('assets/partners/army.png');?>" alt="Logo">
+                <?php 
+                $partnerLogos = [
+                    'dss.png',
+                    'navy.png',
+                    'dia.png',
+                    'MSAB_logo.png',
+                    'npf.png',
+                    'airforce.png',
+                    'army.png',
+                    'MSAB_Certified Partner_standing_RGB_Negativ-Black.png'
+                ];
+                
+                // Duplicate logos multiple times for smooth infinite scroll
+                for ($i = 0; $i < 4; $i++): 
+                    foreach ($partnerLogos as $logo): 
+                ?>
+                    <img src="<?= base_url('assets/partners/' . $logo);?>" alt="Partner Logo">
+                <?php 
+                    endforeach;
+                endfor; 
+                ?>
             </div>
         </div>
         <div style="width: 100%; height: 4px; background-color: #000020"> </div>
+        <!-- Partner Logos Section End -->
+        
         <!-- Main Footer Section Start -->
         <footer class="main-footer" style="padding: 0px 0 0 0;">
             <div class="container pt-5">
