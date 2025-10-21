@@ -13,63 +13,60 @@
         <style>
             .partner-logos {
                 overflow: hidden;
-                /* background-color: #111; */
                 background-color: white;
                 padding: 40px 0;
                 position: relative;
                 white-space: nowrap;
-                display: flex;
             }
 
             .partner-logos .logos {
-                display: flex;
+                display: inline-flex;
                 align-items: center;
-                animation: scroll 30s linear infinite;
+                will-change: transform;
             }
 
             .partner-logos .logos img {
-                height: 50px; /* Adjust logo size */
-                /* width: 70px;  */
-                margin: 0 20px;
-            }
-
-            /* Pause animation on hover */
-            .partner-logos:hover .logos {
-                animation-play-state: paused;
-            }
-
-            @keyframes scroll {
-                from { transform: translateX(0); }
-                to { transform: translateX(-100%); }
+                height: 50px;
+                margin: 0 50px;
+                flex-shrink: 0;
             }
         </style>
 
         <script>
-            $(document).ready(function () {
-                let speed = 50; // Adjust scrolling speed
-                let container = $(".partner-logos");
-                let logos = $(".logos");
+            document.addEventListener('DOMContentLoaded', function() {
+                const marquee = document.querySelector('.partner-logos .logos');
+                if (!marquee) return;
 
-                function duplicateLogos() {
-                    logos.append(logos.html()); // Duplicate logos for smooth loop
+                const scrollSpeed = 0.5; // pixels per frame
+                let position = 0;
+                let isPaused = false;
+                let animationId;
+
+                function scroll() {
+                    if (!isPaused) {
+                        position += scrollSpeed;
+                        
+                        // Reset position when we've scrolled through half the content
+                        if (position >= marquee.scrollWidth / 2) {
+                            position = 0;
+                        }
+                        
+                        marquee.style.transform = `translateX(${-position}px)`;
+                    }
+                    animationId = requestAnimationFrame(scroll);
                 }
 
-                function startScrolling() {
-                    let width = logos.width() / 2;
-                    logos.animate({ marginLeft: -width }, speed * 1000, "linear", function () {
-                        logos.css("margin-left", "0");
-                        startScrolling(); // Restart animation
-                    });
-                }
+                // Start the animation
+                animationId = requestAnimationFrame(scroll);
 
-                duplicateLogos();
-                startScrolling();
+                // Pause on hover
+                marquee.parentElement.addEventListener('mouseenter', function() {
+                    isPaused = true;
+                });
 
-                // Pause scrolling on hover
-                container.hover(
-                    function () { logos.stop(); },  // Pause
-                    function () { startScrolling(); } // Resume
-                );
+                marquee.parentElement.addEventListener('mouseleave', function() {
+                    isPaused = false;
+                });
             });
         </script>
 
@@ -77,7 +74,6 @@
         <div style="width: 100%; height: 4px; background-color: #ca912a"> </div>
         <div class="partner-logos">
             <div class="logos">
-                <div style="width: 100px"></div>
                 <?php 
                 $partnerLogos = [
                     'dss.png',
@@ -89,8 +85,8 @@
                     'MSAB_Certified Partner_standing_RGB_Negativ-Black.png'
                 ];
                 
-                // Duplicate logos multiple times for smooth infinite scroll
-                for ($i = 0; $i < 4; $i++): 
+                // Duplicate logos 6 times to ensure screen coverage (script resets at 50% = 3 full sets visible)
+                for ($i = 0; $i < 6; $i++): 
                     foreach ($partnerLogos as $logo): 
                 ?>
                     <img src="<?= base_url('assets/partners/' . $logo);?>" alt="Partner Logo">
