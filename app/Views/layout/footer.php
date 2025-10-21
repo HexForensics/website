@@ -83,7 +83,6 @@
                     'dss.png',
                     'navy.png',
                     'dia.png',
-                    'MSAB_logo.png',
                     'npf.png',
                     'airforce.png',
                     'army.png',
