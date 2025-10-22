@@ -84,6 +84,12 @@
                     color: white;
                     font-size: 40px
                 }
+                .desktop-only {
+                    display: none !important;
+                }
+                .mobile-only {
+                    display: block !important;
+                }
             }
 
             .service-item .icon-box img {

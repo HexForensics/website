@@ -1,20 +1,50 @@
 <!-- Hero Section Start -->
+<style>
+#particle-effect-container {
+  opacity: 0.3;
+  mix-blend-mode: screen;
+}
+.hero-video .container {
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  #particle-effect-container {
+    display: none !important;
+  }
+}
+</style>
 <div class="hero hero-video home-page-hero">
-    <!-- Video Start -->
-    <div class="hero-bg-video">
-        <!-- Selfhosted Video Start -->
-        <!-- <video autoplay muted loop id="myVideo"><source src="images/hero-bg-video.mp4" type="video/mp4"></video> -->
-        <!-- <video autoplay muted loop id="myVideo"><source src="https://demo.awaikenthemes.com/assets/videos/proshield-video.mp4" type="video/mp4"></video> -->
-        <video autoplay muted loop id="myVideo"><source src="<?= base_url('assets/video/hero.mp4');?>" type="video/mp4"></video>
-        
-        <!-- Selfhosted Video End -->
 
-        <!-- Youtube Video Start -->
-        <!-- <div id="herovideo" class="player" data-property="{videoURL:'74DWwSxsVSs',containment:'.hero-video', showControls:false, autoPlay:true, loop:true, vol:0, mute:false, startAt:0,  stopAt:296, opacity:1, addRaster:true, quality:'large', optimizeDisplay:true}"></div> -->
-        <!-- Youtube Video End -->
+    <!-- Animated Background Start -->
+    <div class="hero-bg-video">
+        <!-- Animated WebP Image for Desktop -->
+        <img src="<?= base_url('assets/hero/crimeintro-lightwieght.webp');?>"
+            alt="Hero Background" id="myVideo" loading="eager" 
+            class="desktop-only"
+            style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
+        >
+        <!-- Static Image and js animation for Mobile -->
+        <img src="<?= base_url('assets/hero/poster.png');?>"
+            alt="Hero Background" id="myVideoMobile" loading="eager"
+            class="mobile-only"
+            style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; display: none;"
+        >
+        <div id="particle-effect-container" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;"
+            >
+        </div>
+
+        
+        <!-- Fallback for browsers that don't support WebP -->
+        <picture style="display: none;">
+            <source srcset="<?= base_url('assets/hero/crimeintro-lightwieght.webp');?>" type="image/webp">
+            <img src="<?= base_url('assets/hero/poster.png');?>" alt="Hero Background">
+        </picture>
     </div>
-    <!-- Video End -->
-    <div class="container" style="background-color: rgba(202, 145, 42, 0.5) !important;">
+    <!-- Animated Background End -->
+
+    <div class="container" >
         <div class="row align-items-center">
             <div class="col-lg-7">
                 <!-- Hero Content Start -->
@@ -55,6 +85,10 @@
     </div>
 </div>
 <!-- Hero Section End -->
+
+<!-- Particle Effect Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+<script src="<?= base_url('assets/js/particle-effect.js');?>"></script>
 
 <div style="width: 100%; height: 8px; background-color: #ca912a">
 </div>
