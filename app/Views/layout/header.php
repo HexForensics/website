@@ -105,6 +105,16 @@
     <!-- <body style="background-color: #000910"> -->
     <body style="background-color: #000020">
 
+        <!-- Background Audio Start-->
+        <audio id="backgroundAudio" autoplay loop preload="auto" style="display: none;">
+            <source src="<?= base_url('assets/audio/background-music.mp3');?>" type="audio/mpeg">
+            <source src="<?= base_url('assets/audio/background-music.ogg');?>" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Background Audio End -->
+
+        <script src="<?= base_url('assets/js/background-audio.js');?>"></script>
+
         <!-- Preloader Start -->
         <div class="preloader">
             <div class="loading-container">
