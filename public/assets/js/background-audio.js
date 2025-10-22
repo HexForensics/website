@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const audio = document.getElementById('backgroundAudio');
     let audioStarted = false;
 
-    // Set volume to 20%
+    // Set volume to 10%
     if (audio) {
-        audio.volume = 0.2;
-        console.log('Audio element found, volume set to 20%');
+        audio.volume = 0.1;
+        console.log('Audio element found, volume set to 10%');
     } else {
         console.log('Audio element not found!');
         return;
