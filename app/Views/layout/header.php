@@ -116,12 +116,12 @@
         <script src="<?= base_url('assets/js/background-audio.js');?>"></script>
 
         <!-- Preloader Start -->
-        <div class="preloader">
+        <!-- <div class="preloader">
             <div class="loading-container">
                 <div class="loading"></div>
                 <div id="loading-icon"><img src="<?= base_url('assets/logo/favicon.png');?>" alt=""></div>
             </div>
-        </div>
+        </div> -->
         <!-- Preloader End -->
 
         <!-- Header Start -->
