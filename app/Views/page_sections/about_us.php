@@ -5,7 +5,7 @@
                 <!-- About Us Image Start -->
                 <div class="about-us-image">
                     <!-- About Image Box Start -->
-                    <div classX="about-image-box about-img-1">
+                    <div class="about-image-box about-img-1">
                         <figure class="image-anime reveal">
                             <img class="about-image-big" src="<?= base_url('assets/pictures/street.jpg');?>" alt="" style="border-radius: 25px;">
                         </figure>
@@ -13,16 +13,16 @@
                     <!-- About Image Box End -->
 
                     <!-- About Image Box Start -->
-                    <div class="about-image-box" style="display: none">
+                    <div class="about-image-box" style="display: block">
                         <div class="about-img-2">
                             <figure class="image-anime reveal">
-                                <img src="<?= base_url('assets/pictures/007.jpg');?>" alt="">
+                                <img src="<?= base_url('assets/pictures/services.jpg');?>" alt="">
                             </figure>
                         </div>
 
                         <div class="about-img-3">
                             <figure class="image-anime reveal">
-                                <img src="<?= base_url('assets/pictures/006.jpg');?>" alt="">
+                                <img src="<?= base_url('assets/pictures/glasses.jpg');?>" alt="">
                             </figure>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                 <div class="about-us-content">
                     <!-- Section Title Start -->
                     <div class="section-title">
-                        <h3 class="wow fadeInUp" style="display: none">HEX FORENSICS</h3>
+                        <h3 class="wow fadeInUp" style="display: block">HEX FORENSICS</h3>
                         <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque" style="color: #fff;">Your trusted partner in <span>Cybersecurity & Digital Forensics</span></h2>
                         <p class="wow fadeInUp" data-wow-delay="0.4s" style="color: #fff;"> Combining advanced forensic technology with deep expertise, we empower businesses, law enforcement, and legal professionals to secure their systems and uncover the truth.</p>
                     </div>
