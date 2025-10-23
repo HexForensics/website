@@ -41,6 +41,10 @@
             <source srcset="<?= base_url('assets/hero/crimeintro-lightwieght.webp');?>" type="image/webp">
             <img src="<?= base_url('assets/hero/poster.png');?>" alt="Hero Background">
         </picture>
+        
+        <!-- Bottom Blur Gradient Overlay -->
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 80px; background: linear-gradient(to top, #000020 0%, #000020 10%, transparent 80%, transparent 100%); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(15px); z-index: 1;"></div>
+    <!-- rgba(44, 62, 80, 0.5) 60% -->
     </div>
     <!-- Animated Background End -->
 
@@ -90,8 +94,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
 <script src="<?= base_url('assets/js/particle-effect.js');?>"></script>
 
-<div style="width: 100%; height: 8px; background-color: #ca912a">
-</div>
+<!-- <div style="width: 100%; height: 8px; background-color: #ca912a"></div> -->
 
 <!-- About Us Section Start -->
 <?= view("page_sections/about_us");?>
