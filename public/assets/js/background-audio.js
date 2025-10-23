@@ -89,4 +89,38 @@ document.addEventListener('DOMContentLoaded', function() {
     audio.addEventListener('loadstart', loadStartHandler);
     audio.addEventListener('canplaythrough', canPlayThroughHandler);
     audio.addEventListener('error', errorHandler);
+
+    // Handle page visibility changes - pause when user leaves tab/minimizes browser
+    document.addEventListener('visibilitychange', function() {
+        if (audio && audioStarted) {
+            if (document.hidden) {
+                // User left the tab/minimized browser - pause audio
+                audio.pause();
+                console.log('Audio paused (tab hidden)');
+            } else {
+                // User returned to the tab - resume audio
+                audio.play().catch(e => {
+                    console.log('Failed to resume audio:', e);
+                });
+                console.log('Audio resumed (tab visible)');
+            }
+        }
+    });
+
+    // Handle window blur/focus - additional fallback for some browsers
+    window.addEventListener('blur', function() {
+        if (audio && audioStarted && !audio.paused) {
+            audio.pause();
+            console.log('Audio paused (window lost focus)');
+        }
+    });
+
+    window.addEventListener('focus', function() {
+        if (audio && audioStarted && audio.paused) {
+            audio.play().catch(e => {
+                console.log('Failed to resume audio:', e);
+            });
+            console.log('Audio resumed (window gained focus)');
+        }
+    });
 });
