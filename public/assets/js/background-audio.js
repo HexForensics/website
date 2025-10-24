@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
         return; // Exit early on mobile devices
     }
 
-    // Set volume to 10%
+    // Set volume to 1%
     if (audio) {
-        audio.volume = 0.1;
-        console.log('Audio element found, volume set to 10%');
+        audio.volume = 0.01;
+        console.log('Audio element found, volume set to 1%');
     } else {
         console.log('Audio element not found!');
         return;
