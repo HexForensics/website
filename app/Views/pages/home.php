@@ -44,6 +44,7 @@
         
         <!-- Bottom Blur Gradient Overlay -->
         <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 80px; background: linear-gradient(to top, #000020 0%, #000020 10%, transparent 80%, transparent 100%); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(15px); z-index: 1;"></div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 80px; background: linear-gradient(to top, #000020 0%, #000020 10%, transparent 80%, transparent 100%); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(1px); z-index: 1;"></div>
     <!-- rgba(44, 62, 80, 0.5) 60% -->
     </div>
     <!-- Animated Background End -->

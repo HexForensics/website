@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const audio = document.getElementById('backgroundAudio');
     let audioStarted = false;
 
+    // Check if device is mobile
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+    
+    if (isMobile) {
+        console.log('Mobile device detected - audio disabled');
+        return; // Exit early on mobile devices
+    }
+
     // Set volume to 10%
     if (audio) {
         audio.volume = 0.1;
