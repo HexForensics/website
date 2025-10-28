@@ -6,7 +6,7 @@
         <!-- Section Title Start -->
         <div class="section-title text-center" style="margin-bottom: 50px;">
             <!-- <h3 class="wow fadeInUp" style="color: #ca912a;">PARTNERSHIPS</h3> -->
-            <h2 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff;">Trusted By Organizations Worldwide</h2>
+            <h2 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff;">We Are Trusted By Organizations Worldwide</h2>
             <p class="wow fadeInUp" data-wow-delay="0.4s" style="color: rgba(255, 255, 255, 0.7); max-width: 700px; margin: 0 auto;">
                 Hex Forensics collaborates with government agencies, defense institutions, and industry leaders around the world.
             </p>

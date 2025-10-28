@@ -46,7 +46,7 @@
                     <!-- Section Title Start -->
                     <div class="section-title">
                         <h3 class="wow fadeInUp" style="display: block">HEX FORENSICS</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque" style="color: #fff;">Your trusted partner in <span>Cybersecurity & Digital Forensics</span></h2>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque" style="color: #fff;">Your partner in <span>Cybersecurity & Digital Forensics</span></h2>
                         <p class="wow fadeInUp" data-wow-delay="0.4s" style="color: #fff;"> Combining advanced forensic technology with deep expertise, we empower businesses, law enforcement, and legal professionals to secure their systems and uncover the truth.</p>
                     </div>
                     <!-- Section Title End -->
