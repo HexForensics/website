@@ -2,6 +2,7 @@
 
 <!-- Trusted By Section Start -->
 <div class="trusted-by-section" style="background-color: #000020; padding: 80px 0;">
+    <div><br><br><br><br></div>
     <div class="container">
         <!-- Section Title Start -->
         <div class="section-title text-center" style="margin-bottom: 50px;">
@@ -56,7 +57,7 @@
                     'url' => 'https://www.mile2.com'
                 ],
                 [
-                    'file' => 'MSAB-white.png',
+                    'file' => 'MSAB_Certified Partner_standing_RGB_Negativ.png',
                     'name' => 'MSAB',
                     'country' => 'Sweden',
                     'url' => 'https://www.msab.com'

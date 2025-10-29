@@ -11,7 +11,9 @@
         <!-- our Blog Section End -->
 
         <!-- Partner Logos Section Start -->
-        <?= view("page_sections/trusted_by");?>
+        <?php  if (!in_array($page_title, ["Partners"])): ?>
+            <?= view("page_sections/trusted_by");?>
+        <?php endif;?>
         <!-- Partner Logos Section End -->
         
         <!-- Main Footer Section Start -->

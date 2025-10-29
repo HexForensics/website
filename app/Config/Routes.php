@@ -15,6 +15,7 @@ $routes->get('/', 'Home::index');
 
 $routes->get('about-us', 'Home::about');
 $routes->get('services', 'Home::services');
+$routes->get('partners', 'Home::partners');
 $routes->get('contact', 'Home::contact');
 $routes->get('get-in-touch', 'Home::contact');
 

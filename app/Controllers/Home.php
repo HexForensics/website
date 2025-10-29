@@ -28,6 +28,12 @@ class Home extends BaseController
         return $this->render('services', $data);
     }
 
+    public function partners()
+    {
+        $data["page_title"] = "Partners";
+        return $this->render('partners', $data);
+    }
+
     // function to render the pages
 	public function render($route, $data = [])
 	{

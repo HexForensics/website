@@ -47,7 +47,7 @@
                 font-weight: bold
             }
 
-            /* Desktop (Large Screens) */
+            /* Desktop (Large Screens) - Hide hamburger-only items */
             @media only screen and (min-width: 992px) {
                 .home-page-hero {
                     height: 99vh
@@ -62,11 +62,35 @@
                     color: white;
                     font-size: 70px
                 }
+                .hamburger-only {
+                    display: none !important;
+                }
             }
 
             /* Tablet (Medium Screens) */
             @media only screen and (max-width: 991px) and (min-width: 768px) {
-
+                /* Show hamburger-only items in tablet */
+                .hamburger-only {
+                    display: block !important;
+                }
+                
+                /* Style GET IN TOUCH as button in tablet menu */
+                .nav-link.nav-button {
+                    background: #ca912a !important;
+                    color: #fff !important;
+                    border-radius: 25px !important;
+                    padding: 12px 25px !important;
+                    margin: 10px 0 !important;
+                    display: inline-block !important;
+                    font-weight: 600 !important;
+                    text-transform: uppercase !important;
+                    transition: all 0.3s ease !important;
+                }
+                
+                .nav-link.nav-button:hover {
+                    background: #b37f1f !important;
+                    transform: translateY(-2px) !important;
+                }
             }
 
             /* Phone (Small Screens) */
@@ -90,6 +114,29 @@
                 .mobile-only {
                     display: block !important;
                 }
+                
+                /* Show hamburger-only items in mobile/tablet */
+                .hamburger-only {
+                    display: block !important;
+                }
+                
+                /* Style GET IN TOUCH as button in mobile menu */
+                .nav-link.nav-button {
+                    background: #ca912a !important;
+                    color: #fff !important;
+                    border-radius: 25px !important;
+                    padding: 12px 25px !important;
+                    margin: 10px 0 !important;
+                    display: inline-block !important;
+                    font-weight: 600 !important;
+                    text-transform: uppercase !important;
+                    transition: all 0.3s ease !important;
+                }
+                
+                .nav-link.nav-button:hover {
+                    background: #b37f1f !important;
+                    transform: translateY(-2px) !important;
+                }
             }
 
             .service-item .icon-box img {
@@ -102,6 +149,7 @@
             } */
         </style>
     </head>
+
     <!-- <body style="background-color: #000910"> -->
     <body style="background-color: #000020">
 
@@ -112,7 +160,6 @@
             Your browser does not support the audio element.
         </audio>
         <!-- Background Audio End -->
-
         <script src="<?= base_url('assets/js/background-audio.js');?>"></script>
 
         <!-- Preloader Start -->
@@ -130,6 +177,7 @@
                 <div class="header-sticky" style="background-color: transparent !important">
                     <nav class="navbar navbar-expand-lg" style="background-color: transparent !important">
                         <div class="container">
+
                             <!-- Logo Start -->
                             <a class="navbar-brand" href="<?= base_url();?>">
                                 <img src="<?= base_url('assets/logo/logo.png');?>" style="height: 50px" alt="Logo">
@@ -140,7 +188,7 @@
                             <div class="collapse navbar-collapse main-menu">
                                 <div class="nav-menu-wrapper">
                                     <ul class="navbar-nav mr-auto" id="menu">
-                                        <li class="nav-item"><a class="nav-link" href="<?= base_url('about-us');?>">ABOUT US</a>
+                                        <li class="nav-item"><a class="nav-link" href="<?= base_url('about-us');?>">COMPANY</a>
                                         <li class="nav-item" style="display: block">
                                             <a class="nav-link" href="<?= base_url('services');?>">SERVICES</a>
                                             <ul>                                        
@@ -151,14 +199,15 @@
                                                 <li class="nav-item"><a class="nav-link" href="<?= base_url('services/training-and-education');?>">Training and Education</a></li>
                                             </ul>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" href="javascript:{}">CAREER</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="<?= base_url('get-in-touch');?>">GET IN TOUCH</a></li>                         
+                                        <!-- <li class="nav-item"><a class="nav-link" href="javascript:{}">CAREER</a></li> -->
+                                        <li class="nav-item"><a class="nav-link" href="<?= base_url('partners');?>">PARTNERS</a></li>
+                                        <li class="nav-item hamburger-only"><a class="nav-link nav-button" href="<?= base_url('get-in-touch');?>">GET IN TOUCH</a></li>                         
                                     </ul>
                                 </div>
 
                                 <!-- Header Btn Start -->
                                 <div class="header-btn">
-                                    <a href="<?= base_url('get-in-touch');?>" class="btn-default">get started</a>
+                                    <a href="<?= base_url('get-in-touch');?>" class="btn-default">contact</a>
                                 </div>
                                 <!-- Header Btn End -->
                             </div>
