@@ -19,7 +19,7 @@
         <!-- Main Footer Section Start -->
         <footer class="main-footer" style="padding: 0px 0 0 0;">
             <div class="container pt-5">
-                <div class="row">
+                <div class="row"  style="padding-bottom: 20px;">
                     <div class="col-lg-12">
                         <!-- Footer Header Start -->
                         <div class="footer-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
@@ -88,16 +88,16 @@
                         <!-- Footer Links End -->
                     </div>
                     
-                    <div class="col-lg-3 col-md-4 col-6" style="padding-bottom: 20px;">
+                    <div class="col-lg-3 col-md-4 col-6">
                         <!-- Footer Links Start -->
                         <div class="footer-links">
-                            <h3>Our Services</h3>
+                            <a href="<?= base_url('services');?>"><h3>Our Services</h3></a>
                             <ul>
-                                <li><a href="<?= base_url('forensics');?>">Digital Forensics</a></li>
-                                <li><a href="<?= base_url('fraud-investigation');?>">Cyber Security</a></li>
-                                <li><a href="<?= base_url('asset-tracing');?>">Asset Tracing</a></li>
-                                <li><a href="<?= base_url('communication-intelligence');?>">Cyber Intelligence (COMINT)</a></li>
-                                <li><a href="<?= base_url('training-and-education');?>">Training & Education</a></li>
+                                <li><a href="<?= base_url('services/fraud-investigation');?>">Digital Forensics</a></li>
+                                <li><a href="<?= base_url('services/cyber-security');?>">Cyber Security</a></li>
+                                <!-- <li><a href="javascript:{}">Asset Tracing</a></li> -->
+                                <li><a href="<?= base_url('services/communication-intelligence');?>">Cyber Intelligence (COMINT)</a></li>
+                                <li><a href="javascript:{}">Training & Education</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->

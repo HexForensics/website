@@ -101,7 +101,7 @@
                     </div>
                     <div class="service-title-box">
                         <div class="service-title">
-                            <h3><a href="<?= base_url('services/intelligence');?>">Intelligence</a></h3>
+                            <h3><a href="<?= base_url('services/intelligence');?>">Cyber Intelligence</a></h3>
                         </div>
                         <div class="service-btn">
                             <a href="<?= base_url('services/intelligence');?>">
