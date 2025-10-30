@@ -194,13 +194,14 @@
                                             <ul>                                        
                                                 <li class="nav-item"><a class="nav-link" href="<?= base_url('services/digital-forensics');?>">Digital Forensics</a></li>
                                                 <li class="nav-item"><a class="nav-link" href="<?= base_url('services/cyber-security');?>">Cyber Security</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="<?= base_url('services/fraud-investigation');?>">Fraud Investigation</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="<?= base_url('services/intelligence');?>">Intelligence</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="<?= base_url('services/training-and-education');?>">Training and Education</a></li>
+                                                <!-- <li class="nav-item"><a class="nav-link" href="<?= base_url('services/fraud-investigation');?>">Fraud Investigation</a></li> -->
+                                                <li class="nav-item"><a class="nav-link" href="<?= base_url('services/intelligence');?>">Cyber Intelligence</a></li>
+                                                <!-- <li class="nav-item"><a class="nav-link" href="<?= base_url('services/training-and-education');?>">Training and Education</a></li> -->
                                             </ul>
                                         </li>
                                         <!-- <li class="nav-item"><a class="nav-link" href="javascript:{}">CAREER</a></li> -->
                                         <li class="nav-item"><a class="nav-link" href="<?= base_url('partners');?>">PARTNERS</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="javascript:{}">TRAINING & EDUCATION</a></li>
                                         <li class="nav-item hamburger-only"><a class="nav-link nav-button" href="<?= base_url('get-in-touch');?>">GET IN TOUCH</a></li>                         
                                     </ul>
                                 </div>

@@ -1750,7 +1750,7 @@ header.main-header .header-sticky.active{
 
 .why-choose-us{
 	padding: 100px 0;
-	background: url('../images/why-choose-bg.png'), var(--primary-color);
+	background: url('../images/why-choose-bg.png'), var(--dark-divider-color);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
