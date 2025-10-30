@@ -23,7 +23,7 @@
         <div class="row align-items-center">
             <div class="col-lg-8 offset-lg-2">
                 <div class="section-title text-center">
-                    <h3 class="wow fadeInUp" style="color: #ca912a;">PARTNERSHIPS</h3>
+                    <h3 class="wow fadeInUp" style="color: #ca912a;">GLOBAL PARTNERSHIPS</h3>
                     <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
                         Collaborating with <span>Industry Leaders</span>
                     </h2>
@@ -60,7 +60,7 @@
                 
                 <!-- Partners Marquee Section (2/3) -->
                 <div class="col-lg-8 col-md-12">
-                    <div class="partners-marquee" style="position: relative; overflow: hidden; width: 100%; padding: 20px 0; -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
+                    <div class="partners-marquee" id="governmentMarqueeContainer" style="position: relative; overflow: hidden; width: 100%; padding: 20px 0; -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
                         <div class="partners-track" id="governmentPartnersTrack" style="display: inline-flex; align-items: center; white-space: nowrap; will-change: transform;">
                             <?php 
                             $governmentPartners = [
@@ -118,27 +118,38 @@
                             for ($i = 0; $i < 4; $i++): 
                                 foreach ($governmentPartners as $partner):
                             ?>
-                                <div class="partner-card-marquee" style="display: inline-flex; flex-direction: column; margin: 0 15px; min-width: 220px; background: rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 18px; transition: all 0.3s ease; border: 1px solid rgba(202, 145, 42, 0.1);">
-                                    <div class="partner-logo-box" style="height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; background: rgba(202, 145, 42, 0.05); border-radius: 6px; padding: 10px;">
+                                <a href="<?= $partner['url'];?>" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                                    <div class="partner-card-marquee" style="display: inline-flex; flex-direction: column; margin: 0 15px; min-width: 220px; background: rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 18px; transition: all 0.3s ease; border: 1px solid rgba(202, 145, 42, 0.1); cursor: pointer;">
+                                    <div class="partner-logo-box" style="height: 90px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; background: rgba(255, 255, 255, 0.7); border-radius: 6px; padding: 12px;">
                                         <img src="<?= base_url('assets/partners/' . $partner['file']);?>" 
                                              alt="<?= $partner['name'];?> logo" 
-                                             style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                                             style="max-height: 100%; max-width: 100%; object-fit: contain; filter: brightness(1.5);">
                                     </div>
-                                    <div class="partner-content">
-                                        <h4 style="font-size: 1rem; margin-bottom: 4px; color: #fff; word-wrap: break-word; white-space: normal;"><?= $partner['abbreviation'];?></h4>
-                                        <h5 style="font-size: 0.8rem; margin-bottom: 6px; color: #ca912a; font-weight: 500; word-wrap: break-word; white-space: normal;"><?= $partner['name'];?></h5>
-                                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.75rem; margin-bottom: 8px; line-height: 1.3; word-wrap: break-word; white-space: normal; overflow-wrap: anywhere;"><?= $partner['description'];?></p>
-                                        <div class="partner-location" style="display: flex; align-items: center; color: rgba(255, 255, 255, 0.5); font-size: 0.7rem; word-wrap: break-word; white-space: normal;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 5px; color: #ca912a;"></i>
-                                            <?= $partner['country'];?>
+                                        <div class="partner-content">
+                                            <h4 style="font-size: 1rem; margin-bottom: 4px; color: #fff; word-wrap: break-word; white-space: normal;"><?= $partner['abbreviation'];?></h4>
+                                            <h5 style="font-size: 0.8rem; margin-bottom: 6px; color: #ca912a; font-weight: 500; word-wrap: break-word; white-space: normal;"><?= $partner['name'];?></h5>
+                                            <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.75rem; margin-bottom: 8px; line-height: 1.3; word-wrap: break-word; white-space: normal; overflow-wrap: anywhere;"><?= $partner['description'];?></p>
+                                            <div class="partner-location" style="display: flex; align-items: center; color: rgba(255, 255, 255, 0.5); font-size: 0.7rem; word-wrap: break-word; white-space: normal;">
+                                                <i class="fa-solid fa-location-dot" style="margin-right: 5px; color: #ca912a;"></i>
+                                                <?= $partner['country'];?>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             <?php 
                                 endforeach;
                             endfor; 
                             ?>
                         </div>
+                    </div>
+                    <!-- Scroll Control Arrows -->
+                    <div class="marquee-controls-bottom" style="display: flex; justify-content: center; gap: 15px; margin-top: 15px; opacity: 0; transition: opacity 0.3s ease; filter: brightness(0.9);">
+                        <button class="marquee-arrow marquee-left" data-direction="left" data-target="governmentPartnersTrack" style="background: rgba(202, 145, 42, 0.9); border: none; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fa-solid fa-chevron-left" style="color: #fff; font-size: 1.1rem;"></i>
+                        </button>
+                        <button class="marquee-arrow marquee-right" data-direction="right" data-target="governmentPartnersTrack" style="background: rgba(202, 145, 42, 0.9); border: none; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fa-solid fa-chevron-right" style="color: #fff; font-size: 1.1rem;"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -151,12 +162,12 @@
             <div class="row align-items-center">
                 <!-- Partners Marquee Section (2/3) - Left Side -->
                 <div class="col-lg-8 col-md-12 order-lg-1 order-2">
-                    <div class="partners-marquee" style="position: relative; overflow: hidden; width: 100%; padding: 20px 0; -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
+                    <div class="partners-marquee" id="technologyMarqueeContainer" style="position: relative; overflow: hidden; width: 100%; padding: 20px 0; -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);">
                         <div class="partners-track-reverse" id="technologyPartnersTrack" style="display: inline-flex; align-items: center; white-space: nowrap; will-change: transform;">
                             <?php 
                             $technologyPartners = [
                                 [
-                                    'file' => 'MSAB-white.png',
+                                    'file' => 'MSAB.png',
                                     'name' => 'MSAB',
                                     'country' => 'Sweden',
                                     'description' => 'World-leading mobile forensics technology and solutions',
@@ -188,7 +199,7 @@
                                     'specialty' => 'E-Discovery'
                                 ],
                                 [
-                                    'file' => 'stratign-logo-white.svg',
+                                    'file' => 'stratign-logo.svg',
                                     'name' => 'Stratign',
                                     'country' => 'Dubai, UAE',
                                     'description' => 'Strategic intelligence and security solutions',
@@ -209,29 +220,41 @@
                             for ($i = 0; $i < 4; $i++): 
                                 foreach ($technologyPartners as $partner):
                             ?>
-                                <div class="partner-card-marquee" style="display: inline-flex; flex-direction: column; margin: 0 15px; min-width: 220px; background: rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 18px; transition: all 0.3s ease; border: 1px solid rgba(202, 145, 42, 0.2);">
-                                    <div class="partner-logo-box" style="height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; background: rgba(202, 145, 42, 0.05); border-radius: 6px; padding: 10px;">
-                                        <img src="<?= base_url('assets/partners/' . $partner['file']);?>" 
-                                             alt="<?= $partner['name'];?> logo" 
-                                             style="max-height: 100%; max-width: 100%; object-fit: contain;">
-                                    </div>
-                                    <div class="partner-content">
-                                        <div class="specialty-badge" style="display: inline-block; background: rgba(202, 145, 42, 0.15); color: #ca912a; padding: 3px 8px; border-radius: 12px; font-size: 0.65rem; margin-bottom: 8px; font-weight: 500; word-wrap: break-word; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
-                                            <?= $partner['specialty'];?>
+                                <a href="<?= $partner['url'];?>" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                                    <div class="partner-card-marquee" style="display: inline-flex; flex-direction: column; margin: 0 15px; min-width: 220px; background: rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 18px; transition: all 0.3s ease; border: 1px solid rgba(202, 145, 42, 0.2); cursor: pointer;">
+                                        <div class="partner-logo-box" style="height: 90px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; background: rgba(255, 255, 255, 0.7); border-radius: 6px; padding: 12px;">
+                                            <!-- rgba(202, 145, 42, 0.05) -->
+                                            <img src="<?= base_url('assets/partners/' . $partner['file']);?>" 
+                                                 alt="<?= $partner['name'];?> logo" 
+                                                 style="max-height: 100%; max-width: 100%; object-fit: contain; filter: brightness(1.2);">
                                         </div>
-                                        <h4 style="font-size: 1rem; margin-bottom: 4px; color: #fff; word-wrap: break-word; white-space: normal;"><?= $partner['name'];?></h4>
-                                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.75rem; margin-bottom: 8px; line-height: 1.3; word-wrap: break-word; white-space: normal; overflow-wrap: anywhere;"><?= $partner['description'];?></p>
-                                        <div class="partner-location" style="display: flex; align-items: center; color: rgba(255, 255, 255, 0.5); font-size: 0.7rem; word-wrap: break-word; white-space: normal;">
-                                            <i class="fa-solid fa-location-dot" style="margin-right: 5px; color: #ca912a;"></i>
-                                            <?= $partner['country'];?>
+                                        <div class="partner-content">
+                                            <div class="specialty-badge" style="display: inline-block; background: rgba(202, 145, 42, 0.15); color: #ca912a; padding: 3px 8px; border-radius: 12px; font-size: 0.65rem; margin-bottom: 8px; font-weight: 500; word-wrap: break-word; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+                                                <?= $partner['specialty'];?>
+                                            </div>
+                                            <h4 style="font-size: 1rem; margin-bottom: 4px; color: #fff; word-wrap: break-word; white-space: normal;"><?= $partner['name'];?></h4>
+                                            <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.75rem; margin-bottom: 8px; line-height: 1.3; word-wrap: break-word; white-space: normal; overflow-wrap: anywhere;"><?= $partner['description'];?></p>
+                                            <div class="partner-location" style="display: flex; align-items: center; color: rgba(255, 255, 255, 0.5); font-size: 0.7rem; word-wrap: break-word; white-space: normal;">
+                                                <i class="fa-solid fa-location-dot" style="margin-right: 5px; color: #ca912a;"></i>
+                                                <?= $partner['country'];?>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             <?php 
                                 endforeach;
                             endfor; 
                             ?>
                         </div>
+                    </div>
+                    <!-- Scroll Control Arrows -->
+                    <div class="marquee-controls-bottom" style="display: flex; justify-content: center; gap: 15px; margin-top: 15px; opacity: 0; transition: opacity 0.3s ease; filter: brightness(0.9);">
+                        <button class="marquee-arrow marquee-left" data-direction="left" data-target="technologyPartnersTrack" style="background: rgba(202, 145, 42, 0.9); border: none; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fa-solid fa-chevron-left" style="color: #fff; font-size: 1.1rem;"></i>
+                        </button>
+                        <button class="marquee-arrow marquee-right" data-direction="right" data-target="technologyPartnersTrack" style="background: rgba(202, 145, 42, 0.9); border: none; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease;">
+                            <i class="fa-solid fa-chevron-right" style="color: #fff; font-size: 1.1rem;"></i>
+                        </button>
                     </div>
                 </div>
                 
@@ -309,8 +332,8 @@
 <!-- Partnership Benefits Section End -->
 
 <!-- Call to Action Section Start -->
-<div class="partner-cta" style="padding: 80px 0; background-color: rgba(255, 255, 255, 0.05);">
-    <!-- #fff; white-->
+<div class="partner-cta" style="padding: 80px 0; background-color: var(--dark-divider-color) ;">
+    <!-- #fff; white. rgba(255, 255, 255, 0.05)-dark-->
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8 offset-lg-2">
@@ -371,8 +394,23 @@
         border-color: rgba(202, 145, 42, 0.3) !important;
     }
     
-    .partner-card-marquee:hover .partner-logo-box {
-        background: rgba(202, 145, 42, 0.1) !important;
+    /* Marquee Controls */
+    .partners-marquee:hover + .marquee-controls-bottom {
+        opacity: 1 !important;
+    }
+    
+    .marquee-controls-bottom:hover {
+        opacity: 1 !important;
+    }
+    
+    .marquee-arrow:hover {
+        background: rgba(202, 145, 42, 1) !important;
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(202, 145, 42, 0.3);
+    }
+    
+    .marquee-arrow:active {
+        transform: scale(0.95);
     }
     
     /* Custom button arrow override */
@@ -415,8 +453,8 @@
         }
         
         .partner-card-marquee .partner-logo-box {
-            height: 60px !important;
-            padding: 8px !important;
+            height: 75px !important;
+            padding: 10px !important;
         }
         
         .partner-card-marquee h4 {
@@ -467,14 +505,16 @@
     document.addEventListener('DOMContentLoaded', function() {
         // Government Partners Marquee (Left to Right)
         const governmentMarquee = document.getElementById('governmentPartnersTrack');
-        if (governmentMarquee) {
+        const governmentContainer = document.getElementById('governmentMarqueeContainer');
+        if (governmentMarquee && governmentContainer) {
             const scrollSpeed = 0.5; // pixels per frame
             let governmentPosition = 0;
             let governmentPaused = false;
             let governmentAnimationId;
+            let governmentManualControl = false;
 
             function scrollGovernment() {
-                if (!governmentPaused) {
+                if (!governmentPaused && !governmentManualControl) {
                     governmentPosition += scrollSpeed;
                     
                     // Reset position when we've scrolled through half the content
@@ -487,32 +527,68 @@
                 governmentAnimationId = requestAnimationFrame(scrollGovernment);
             }
 
+            // Manual scroll function
+            function manualScrollGovernment(direction) {
+                governmentManualControl = true;
+                const scrollAmount = 250; // pixels to scroll
+                
+                // Add smooth transition
+                governmentMarquee.style.transition = 'transform 0.6s ease-in-out';
+                
+                if (direction === 'left') {
+                    governmentPosition = Math.max(0, governmentPosition - scrollAmount);
+                } else {
+                    governmentPosition = Math.min(governmentMarquee.scrollWidth / 2, governmentPosition + scrollAmount);
+                }
+                
+                governmentMarquee.style.transform = `translateX(${-governmentPosition}px)`;
+                
+                // Remove transition after animation completes and resume auto-scroll
+                setTimeout(() => {
+                    governmentMarquee.style.transition = '';
+                    governmentManualControl = false;
+                }, 3000);
+            }
+
             // Start the animation
             governmentAnimationId = requestAnimationFrame(scrollGovernment);
 
             // Pause on hover
-            governmentMarquee.parentElement.addEventListener('mouseenter', function() {
+            governmentContainer.addEventListener('mouseenter', function() {
                 governmentPaused = true;
             });
 
-            governmentMarquee.parentElement.addEventListener('mouseleave', function() {
+            governmentContainer.addEventListener('mouseleave', function() {
                 governmentPaused = false;
+            });
+
+            // Add click handlers for manual controls
+            const governmentArrows = governmentContainer.parentElement.querySelectorAll('.marquee-arrow[data-target="governmentPartnersTrack"]');
+            governmentArrows.forEach(arrow => {
+                arrow.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const direction = this.getAttribute('data-direction');
+                    manualScrollGovernment(direction);
+                });
             });
         }
 
         // Technology Partners Marquee (Right to Left)
         const technologyMarquee = document.getElementById('technologyPartnersTrack');
-        if (technologyMarquee) {
+        const technologyContainer = document.getElementById('technologyMarqueeContainer');
+        if (technologyMarquee && technologyContainer) {
             const scrollSpeed = 0.5; // pixels per frame
             let technologyPosition = 0;
             let technologyPaused = false;
             let technologyAnimationId;
+            let technologyManualControl = false;
 
             // Start from the end for reverse scrolling
             technologyPosition = technologyMarquee.scrollWidth / 2;
 
             function scrollTechnology() {
-                if (!technologyPaused) {
+                if (!technologyPaused && !technologyManualControl) {
                     technologyPosition -= scrollSpeed; // Subtract for reverse direction
                     
                     // Reset position when we've scrolled through half the content (reverse)
@@ -525,16 +601,50 @@
                 technologyAnimationId = requestAnimationFrame(scrollTechnology);
             }
 
+            // Manual scroll function
+            function manualScrollTechnology(direction) {
+                technologyManualControl = true;
+                const scrollAmount = 250; // pixels to scroll
+                
+                // Add smooth transition
+                technologyMarquee.style.transition = 'transform 0.6s ease-in-out';
+                
+                if (direction === 'left') {
+                    technologyPosition = Math.max(0, technologyPosition - scrollAmount);
+                } else {
+                    technologyPosition = Math.min(technologyMarquee.scrollWidth / 2, technologyPosition + scrollAmount);
+                }
+                
+                technologyMarquee.style.transform = `translateX(${-technologyPosition}px)`;
+                
+                // Remove transition after animation completes and resume auto-scroll
+                setTimeout(() => {
+                    technologyMarquee.style.transition = '';
+                    technologyManualControl = false;
+                }, 3000);
+            }
+
             // Start the animation
             technologyAnimationId = requestAnimationFrame(scrollTechnology);
 
             // Pause on hover
-            technologyMarquee.parentElement.addEventListener('mouseenter', function() {
+            technologyContainer.addEventListener('mouseenter', function() {
                 technologyPaused = true;
             });
 
-            technologyMarquee.parentElement.addEventListener('mouseleave', function() {
+            technologyContainer.addEventListener('mouseleave', function() {
                 technologyPaused = false;
+            });
+
+            // Add click handlers for manual controls
+            const technologyArrows = technologyContainer.parentElement.querySelectorAll('.marquee-arrow[data-target="technologyPartnersTrack"]');
+            technologyArrows.forEach(arrow => {
+                arrow.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const direction = this.getAttribute('data-direction');
+                    manualScrollTechnology(direction);
+                });
             });
         }
     });

@@ -216,4 +216,3 @@
     });
 </script>
 
-<div style="width: 100%; height: 4px; background-color: #ca912a"></div>

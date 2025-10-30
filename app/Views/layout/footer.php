@@ -15,7 +15,7 @@
             <?= view("page_sections/trusted_by");?>
         <?php endif;?>
         <!-- Partner Logos Section End -->
-        
+        <div style="width: 100%; height: 4px; background-color: #ca912a"></div>
         <!-- Main Footer Section Start -->
         <footer class="main-footer" style="padding: 0px 0 0 0;">
             <div class="container pt-5">
