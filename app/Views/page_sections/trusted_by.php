@@ -16,7 +16,7 @@
     </div>
 
     <!-- Partner Logos Marquee Start -->
-    <div class="partner-logos-marquee" style="position: relative; overflow: hidden; width: 100%; padding: 40px 0;">
+    <div class="partner-logos-marquee" style="position: relative; overflow: hidden; width: 100%; padding: 40px 0; cursor: pointer;" onclick="window.location.href='<?= base_url('partners');?>';" title="Click to view partners and clients">
         <div class="logos-track" id="partnerLogosTrack">
             <?php 
             $partnerLogos = [
@@ -99,12 +99,8 @@
             for ($i = 0; $i < 8; $i++): 
                 foreach ($partnerLogos as $partner):
             ?>
-                <a href="<?= $partner['url'];?>" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   class="partner-logo-item"
-                   title="<?= $partner['name'];?> - <?= $partner['country'];?>"
-                   style="display: inline-flex; flex-direction: column; align-items: center; margin: 0 40px; text-decoration: none; transition: all 0.3s ease;">
+                <div class="partner-logo-item"
+                   style="display: inline-flex; flex-direction: column; align-items: center; margin: 0 40px; text-decoration: none; transition: all 0.3s ease; pointer-events: none;">
                     <div class="logo-container" style="height: 120px; width: 240px; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(255, 255, 255, 0.05); border-radius: 10px; transition: all 0.3s ease;">
                         <img src="<?= base_url('assets/partners/' . $partner['file']);?>" 
                              alt="<?= $partner['name'];?> logo" 
@@ -114,7 +110,7 @@
                         <?= $partner['name'];?> <br>
                         <?= $partner['country'];?>
                     </p>
-                </a>
+                </div>
             <?php 
                 endforeach;
             endfor; 
@@ -129,6 +125,11 @@
     .partner-logos-marquee {
         -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
         mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        transition: all 0.3s ease;
+    }
+    
+    .partner-logos-marquee:hover {
+        background: rgba(202, 145, 42, 0.03);
     }
 
     .logos-track {
