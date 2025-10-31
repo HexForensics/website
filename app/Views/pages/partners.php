@@ -66,7 +66,7 @@
                             $governmentPartners = [
                                 [
                                     'file' => 'dss.png',
-                                    'name' => 'Department of State Services',
+                                    'name' => 'Department of State Services (DSS)',
                                     'abbreviation' => 'DSS',
                                     'country' => 'Nigeria',
                                     'description' => 'Nigeria\'s premier intelligence and security agency',
@@ -82,7 +82,7 @@
                                 ],
                                 [
                                     'file' => 'dia.png',
-                                    'name' => 'Defence Intelligence Agency',
+                                    'name' => 'Defence Intelligence Agency (DIA)',
                                     'abbreviation' => 'DIA',
                                     'country' => 'Nigeria',
                                     'description' => 'Military intelligence and strategic operations',
@@ -90,7 +90,7 @@
                                 ],
                                 [
                                     'file' => 'npf.png',
-                                    'name' => 'Nigeria Police Force',
+                                    'name' => 'Nigeria Police Force (NPF)',
                                     'abbreviation' => 'NPF',
                                     'country' => 'Nigeria',
                                     'description' => 'National law enforcement and crime investigation',
@@ -120,14 +120,13 @@
                             ?>
                                 <a href="<?= $partner['url'];?>" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
                                     <div class="partner-card-marquee" style="display: inline-flex; flex-direction: column; margin: 0 15px; min-width: 220px; background: rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 18px; transition: all 0.3s ease; border: 1px solid rgba(202, 145, 42, 0.1); cursor: pointer;">
-                                    <div class="partner-logo-box" style="height: 90px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; background: rgba(255, 255, 255, 0.7); border-radius: 6px; padding: 12px;">
+                                    <div class="partner-logo-box" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; background: rgba(255, 255, 255, 0.7); border-radius: 6px; padding: 15px;">
                                         <img src="<?= base_url('assets/partners/' . $partner['file']);?>" 
                                              alt="<?= $partner['name'];?> logo" 
                                              style="max-height: 100%; max-width: 100%; object-fit: contain; filter: brightness(1.5);">
                                     </div>
                                         <div class="partner-content">
-                                            <h4 style="font-size: 1rem; margin-bottom: 4px; color: #fff; word-wrap: break-word; white-space: normal;"><?= $partner['abbreviation'];?></h4>
-                                            <h5 style="font-size: 0.8rem; margin-bottom: 6px; color: #ca912a; font-weight: 500; word-wrap: break-word; white-space: normal;"><?= $partner['name'];?></h5>
+                                            <h4 style="font-size: 0.9rem; margin-bottom: 6px; color: #ca912a; font-weight: 500; word-wrap: break-word; white-space: normal;"><?= $partner['name'];?></h4>
                                             <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.75rem; margin-bottom: 8px; line-height: 1.3; word-wrap: break-word; white-space: normal; overflow-wrap: anywhere;"><?= $partner['description'];?></p>
                                             <div class="partner-location" style="display: flex; align-items: center; color: rgba(255, 255, 255, 0.5); font-size: 0.7rem; word-wrap: break-word; white-space: normal;">
                                                 <i class="fa-solid fa-location-dot" style="margin-right: 5px; color: #ca912a;"></i>
@@ -155,7 +154,7 @@
             </div>
         </div>
         
-        <div><br><br><br><br></div>
+        <div> <br><br> </div>
 
         <!-- Technology Partners -->
         <div class="partner-category-section" style="margin-bottom: 80px;">
@@ -222,21 +221,23 @@
                             ?>
                                 <a href="<?= $partner['url'];?>" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
                                     <div class="partner-card-marquee" style="display: inline-flex; flex-direction: column; margin: 0 15px; min-width: 220px; background: rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 18px; transition: all 0.3s ease; border: 1px solid rgba(202, 145, 42, 0.2); cursor: pointer;">
-                                        <div class="partner-logo-box" style="height: 90px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; background: rgba(255, 255, 255, 0.7); border-radius: 6px; padding: 12px;">
+                                        <div class="partner-logo-box" style="height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; background: rgba(255, 255, 255, 0.7); border-radius: 6px; padding: 15px;">
                                             <!-- rgba(202, 145, 42, 0.05) -->
                                             <img src="<?= base_url('assets/partners/' . $partner['file']);?>" 
                                                  alt="<?= $partner['name'];?> logo" 
                                                  style="max-height: 100%; max-width: 100%; object-fit: contain; filter: brightness(1.2);">
                                         </div>
                                         <div class="partner-content">
-                                            <div class="specialty-badge" style="display: inline-block; background: rgba(202, 145, 42, 0.15); color: #ca912a; padding: 3px 8px; border-radius: 12px; font-size: 0.65rem; margin-bottom: 8px; font-weight: 500; word-wrap: break-word; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
-                                                <?= $partner['specialty'];?>
-                                            </div>
-                                            <h4 style="font-size: 1rem; margin-bottom: 4px; color: #fff; word-wrap: break-word; white-space: normal;"><?= $partner['name'];?></h4>
+                                            <h4 style="font-size: 0.9rem; margin-bottom: 6px; color: #ca912a; font-weight: 500; word-wrap: break-word; white-space: normal;"><?= $partner['name'];?></h4>
                                             <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.75rem; margin-bottom: 8px; line-height: 1.3; word-wrap: break-word; white-space: normal; overflow-wrap: anywhere;"><?= $partner['description'];?></p>
-                                            <div class="partner-location" style="display: flex; align-items: center; color: rgba(255, 255, 255, 0.5); font-size: 0.7rem; word-wrap: break-word; white-space: normal;">
-                                                <i class="fa-solid fa-location-dot" style="margin-right: 5px; color: #ca912a;"></i>
-                                                <?= $partner['country'];?>
+                                            <div class="partner-location" style="display: flex; align-items: center; justify-content: space-between; color: rgba(255, 255, 255, 0.5); font-size: 0.7rem; word-wrap: break-word; white-space: normal;">
+                                                <div style="display: flex; align-items: center;">
+                                                    <i class="fa-solid fa-location-dot" style="margin-right: 5px; color: #ca912a;"></i>
+                                                    <?= $partner['country'];?>
+                                                </div>
+                                                <div class="specialty-inline" style="background: rgba(202, 145, 42, 0.15); color: #ca912a; padding: 2px 6px; border-radius: 8px; font-size: 0.65rem; font-weight: 500;">
+                                                    <?= $partner['specialty'];?>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -280,14 +281,15 @@
 <div class="partnership-benefits" style="padding: 80px 0; background-color: #000020;">
     <div class="container">
         <div class="section-title text-center">
-            <h3 class="wow fadeInUp" style="color: #ca912a;">WHY PARTNER WITH US</h3>
-            <!-- <h2 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff; margin-bottom: 60px;">
-                Benefits of <span style="color: #ca912a;">Partnership</span>
-            </h2> -->
+            <h3 class="wow fadeInUp" style="color: #ca912a;">YOUR STRATEGIC ADVANTAGE</h3>
+            <h2 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff; margin-bottom: 60px;">
+                Partnering With Us <span style="color: #ca912a;">Elevates Your Mission</span>
+            </h2>
+            <!-- maybe tell a story on how partnerships have led to successful outcomes -->
         </div>
         
         <div class="row">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                         <i class="fa-solid fa-handshake" style="font-size: 2rem; color: #ca912a;"></i>
@@ -297,7 +299,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" data-wow-delay="0.2s" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                         <i class="fa-solid fa-rocket" style="font-size: 2rem; color: #ca912a;"></i>
@@ -307,7 +309,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" data-wow-delay="0.4s" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                         <i class="fa-solid fa-globe" style="font-size: 2rem; color: #ca912a;"></i>
@@ -317,7 +319,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" data-wow-delay="0.6s" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                         <i class="fa-solid fa-award" style="font-size: 2rem; color: #ca912a;"></i>
@@ -453,8 +455,8 @@
         }
         
         .partner-card-marquee .partner-logo-box {
-            height: 75px !important;
-            padding: 10px !important;
+            height: 80px !important;
+            padding: 12px !important;
         }
         
         .partner-card-marquee h4 {
@@ -476,13 +478,23 @@
             overflow-wrap: anywhere !important;
         }
         
-        .specialty-badge {
+        .specialty-inline {
             font-size: 0.6rem !important;
-            padding: 2px 6px !important;
+            padding: 2px 4px !important;
             white-space: nowrap !important;
             overflow: hidden !important;
             text-overflow: ellipsis !important;
-            max-width: 100% !important;
+            max-width: 70px !important;
+        }
+        
+        .partner-location {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 4px !important;
+        }
+        
+        .partner-location > div:first-child {
+            width: 100% !important;
         }
         
         .partner-cta h2 {
@@ -497,6 +509,55 @@
         .cta-buttons a {
             width: 100%;
             text-align: center;
+        }
+        
+        /* Partnership Benefits - Responsive Tiles */
+        .benefit-item {
+            padding: 20px 10px !important;
+        }
+        
+        .benefit-item h4 {
+            font-size: 1rem !important;
+        }
+        
+        .benefit-item p {
+            font-size: 0.85rem !important;
+        }
+        
+        .benefit-icon {
+            width: 60px !important;
+            height: 60px !important;
+            margin: 0 auto 15px !important;
+        }
+        
+        .benefit-icon i {
+            font-size: 1.5rem !important;
+        }
+    }
+    
+    /* Extra small devices - further tile adjustments */
+    @media (max-width: 576px) {
+        .benefit-item {
+            padding: 15px 5px !important;
+        }
+        
+        .benefit-item h4 {
+            font-size: 0.9rem !important;
+            margin-bottom: 10px !important;
+        }
+        
+        .benefit-item p {
+            font-size: 0.8rem !important;
+        }
+        
+        .benefit-icon {
+            width: 50px !important;
+            height: 50px !important;
+            margin: 0 auto 10px !important;
+        }
+        
+        .benefit-icon i {
+            font-size: 1.2rem !important;
         }
     }
 </style>
