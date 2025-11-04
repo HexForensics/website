@@ -25,9 +25,9 @@
             <div class="icon-box">
                 <img src="<?= base_url('assets/images/icon-mail.svg');?>" alt="">
             </div>
-            <div class="sidebar-cta-contact-content">
-                <h3>
-                    <a href="mailto:info@hexforensics.com">info@hexforensics.com</a>
+            <div class="sidebar-cta-contact-content email-address allow-copy">
+                <h3 class="email-address allow-copy">
+                    <a href="mailto:info@hexforensics.com" class="email-address allow-copy">info@hexforensics.com</a>
                 </h3>
                 <p>Get in-touch with us</p>
             </div>

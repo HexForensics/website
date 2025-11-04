@@ -67,13 +67,13 @@
                         <div class="footer-links">
                             <h3>Get In Touch</h3>
                             <ul>
-                                <li style="margin-bottom: 10px;">
+                                <li style="margin-bottom: 10px;" class="phone-number allow-copy">
                                     <i class="fa-solid fa-phone" style="color: #ca912a; margin-right: 8px;"></i>
-                                    <a href="tel:+2349066779939">+234 906 677 9939</a>
+                                    <a href="tel:+2349066779939" class="phone-number allow-copy">+234 906 677 9939</a>
                                 </li>
-                                <li style="margin-bottom: 10px;">
+                                <li style="margin-bottom: 10px;" class="email-address allow-copy">
                                     <i class="fa-solid fa-envelope" style="color: #ca912a; margin-right: 8px;"></i>
-                                    <a href="mailto:info@hexforensics.com" style="text-transform: lowercase">info@hexforensics.com</a>
+                                    <a href="mailto:info@hexforensics.com" style="text-transform: lowercase" class="email-address allow-copy">info@hexforensics.com</a>
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-globe" style="color: #ca912a; margin-right: 8px;"></i>

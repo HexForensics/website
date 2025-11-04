@@ -35,25 +35,25 @@
                     <!-- Contact Info List Start -->
                     <div class="contact-info-list">
                         <!-- Contact Info Item Start -->
-                        <div class="contact-info-item wow fadeInUp">
+                        <div class="contact-info-item wow fadeInUp phone-number allow-copy">
                             <div class="icon-box">
                                 <img src="<?= base_url('assets/images/icon-phone-accent.svg');?>" alt="">
                             </div>
-                            <div class="contact-info-content">
+                            <div class="contact-info-content phone-number allow-copy">
                                 <h3>contact us</h3>
-                                <p><a href="tel:+2349066779939">+234 90 6677 9939</a></p>
+                                <p class="phone-number allow-copy"><a href="tel:+2349066779939" class="phone-number allow-copy">+234 90 6677 9939</a></p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->
 
                         <!-- Contact Info Item Start -->
-                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-info-item wow fadeInUp email-address allow-copy" data-wow-delay="0.2s">
                             <div class="icon-box">
                                 <img src="<?= base_url('assets/images/icon-mail-accent.svg');?>" alt="">
                             </div>
-                            <div class="contact-info-content">
+                            <div class="contact-info-content email-address allow-copy">
                                 <h3>e-mail us</h3>
-                                <p><a href="mailto:info@hexforensics.com">info@hexforensics.com</a></p>
+                                <p class="email-address allow-copy"><a href="mailto:info@hexforensics.com" class="email-address allow-copy">info@hexforensics.com</a></p>
                             </div>
                         </div>
                         <!-- Contact Info Item End -->
@@ -72,7 +72,7 @@
                     </div>
                     <!-- Contact Info List End -->
 
-                    <div class="contact-us-form" style="display: none">
+                    <div class="contact-us-form" style="display: block">
                         <!-- Section Title Start -->
                         <div class="section-title dark-section wow fadeInUp">
                             <h2 class="wow fadeInUp" data-cursor="-opaque">Get in touch with us</h2>

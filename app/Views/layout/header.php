@@ -47,6 +47,23 @@
                 user-select: none;
             }
 
+            /* Content Protection: Allow text selection in whitelisted areas */
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="number"],
+            input[type="password"],
+            textarea,
+            .allow-copy,
+            .contact-info,
+            .email-address,
+            .phone-number {
+                -webkit-user-select: text !important;
+                -moz-user-select: text !important;
+                -ms-user-select: text !important;
+                user-select: text !important;
+            }
+
             /* Content Protection: Image Protection */
             img {
                 pointer-events: none;
@@ -174,14 +191,60 @@
 
         <!-- Content Protection Start -->
         <script>
-            // Content Protection: Disable Right-Click
-            document.addEventListener('contextmenu', function(e) {
-                e.preventDefault();
+            // Whitelist: Elements where copy/paste is allowed
+            const allowCopySelectors = [
+                'input[type="text"]',
+                'input[type="email"]',
+                'input[type="tel"]',
+                'input[type="number"]',
+                'input[type="password"]',
+                'textarea',
+                '.allow-copy',
+                '.contact-info',
+                '.email-address',
+                '.phone-number'
+            ];
+
+            // Check if element or its parent is whitelisted
+            function isWhitelisted(element) {
+                if (!element) return false;
+                
+                // Check if element itself matches whitelist
+                for (let selector of allowCopySelectors) {
+                    if (element.matches && element.matches(selector)) {
+                        return true;
+                    }
+                }
+                
+                // Check if any parent element matches whitelist
+                let parent = element.parentElement;
+                while (parent) {
+                    for (let selector of allowCopySelectors) {
+                        if (parent.matches && parent.matches(selector)) {
+                            return true;
+                        }
+                    }
+                    parent = parent.parentElement;
+                }
+                
                 return false;
+            }
+
+            // Content Protection: Disable Right-Click (with whitelist)
+            document.addEventListener('contextmenu', function(e) {
+                if (!isWhitelisted(e.target)) {
+                    e.preventDefault();
+                    return false;
+                }
             });
 
-            // Content Protection: Disable Keyboard Shortcuts
+            // Content Protection: Disable Keyboard Shortcuts (with whitelist)
             document.addEventListener('keydown', function(e) {
+                // Allow shortcuts in whitelisted elements
+                if (isWhitelisted(e.target)) {
+                    return true;
+                }
+
                 // Disable Ctrl+C (Copy)
                 if (e.ctrlKey && e.key === 'c') {
                     e.preventDefault();
@@ -194,6 +257,11 @@
                 }
                 // Disable Ctrl+X (Cut)
                 if (e.ctrlKey && e.key === 'x') {
+                    e.preventDefault();
+                    return false;
+                }
+                // Disable Ctrl+V (Paste) - only block outside whitelisted areas
+                if (e.ctrlKey && e.key === 'v') {
                     e.preventDefault();
                     return false;
                 }
