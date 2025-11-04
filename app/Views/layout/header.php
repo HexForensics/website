@@ -40,6 +40,11 @@
             /* Global font setting */
             html, body {
                 font-family: 'Rajdhani', sans-serif;
+                /* Content Protection: Disable Text Selection */
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
             }
 
             .nav-item .nav-link {
