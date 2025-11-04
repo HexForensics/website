@@ -158,11 +158,61 @@
     <!-- <body style="background-color: #000910"> -->
     <body style="background-color: #000020">
 
-        <!-- Content Protection: Disable Right-Click -->
+        <!-- Content Protection Start -->
         <script>
+            // Content Protection: Disable Right-Click
             document.addEventListener('contextmenu', function(e) {
                 e.preventDefault();
                 return false;
+            });
+
+            // Content Protection: Disable Keyboard Shortcuts
+            document.addEventListener('keydown', function(e) {
+                // Disable Ctrl+C (Copy)
+                if (e.ctrlKey && e.key === 'c') {
+                    e.preventDefault();
+                    return false;
+                }
+                // Disable Ctrl+A (Select All)
+                if (e.ctrlKey && e.key === 'a') {
+                    e.preventDefault();
+                    return false;
+                }
+                // Disable Ctrl+X (Cut)
+                if (e.ctrlKey && e.key === 'x') {
+                    e.preventDefault();
+                    return false;
+                }
+                // Disable Ctrl+U (View Source)
+                if (e.ctrlKey && e.key === 'u') {
+                    e.preventDefault();
+                    return false;
+                }
+                // Disable Ctrl+S (Save Page)
+                if (e.ctrlKey && e.key === 's') {
+                    e.preventDefault();
+                    return false;
+                }
+                // Disable F12 (Developer Tools)
+                if (e.key === 'F12') {
+                    e.preventDefault();
+                    return false;
+                }
+                // Disable Ctrl+Shift+I (Inspect Element)
+                if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+                    e.preventDefault();
+                    return false;
+                }
+                // Disable Ctrl+Shift+J (Console)
+                if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+                    e.preventDefault();
+                    return false;
+                }
+                // Disable Ctrl+Shift+C (Inspect Element)
+                if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+                    e.preventDefault();
+                    return false;
+                }
             });
         </script>
         <!-- End Content Protection -->
