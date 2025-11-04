@@ -153,6 +153,15 @@
     <!-- <body style="background-color: #000910"> -->
     <body style="background-color: #000020">
 
+        <!-- Content Protection: Disable Right-Click -->
+        <script>
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                return false;
+            });
+        </script>
+        <!-- End Content Protection -->
+
         <!-- Background Audio Start-->
         <!-- <audio id="backgroundAudio" autoplay loop preload="auto" style="display: none;">
             <source src="<?= base_url('assets/audio/background-music.mp3');?>" type="audio/mpeg">
