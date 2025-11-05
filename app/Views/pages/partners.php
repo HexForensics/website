@@ -294,38 +294,38 @@
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                         <i class="fa-solid fa-handshake" style="font-size: 2rem; color: #ca912a;"></i>
                     </div>
-                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Trusted Collaboration</h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Long-term partnerships built on trust and mutual success</p>
+                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Driven by Purpose</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Rooted in law enforcement heritage, we're dedicated to revealing the truth and safeguarding the vulnerable in every investigation.</p>
                 </div>
             </div>
             
             <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" data-wow-delay="0.2s" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-rocket" style="font-size: 2rem; color: #ca912a;"></i>
+                        <i class="fa-solid fa-magnifying-glass" style="font-size: 2rem; color: #ca912a;"></i>
                     </div>
-                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Innovation</h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Access to cutting-edge technology and research</p>
+                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Forged in the Field</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Created by seasoned investigators who understand the real challenges of solving complex cases from years of hands-on experience.</p>
                 </div>
             </div>
             
             <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" data-wow-delay="0.4s" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-globe" style="font-size: 2rem; color: #ca912a;"></i>
+                        <i class="fa-solid fa-users" style="font-size: 2rem; color: #ca912a;"></i>
                     </div>
-                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Global Reach</h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">International network and market opportunities</p>
+                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Your Success is Our Priority</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Our entire team stands ready to support your mission. We actively engage with your concerns and respond swiftly to your requirements.</p>
                 </div>
             </div>
             
             <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" data-wow-delay="0.6s" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-award" style="font-size: 2rem; color: #ca912a;"></i>
+                        <i class="fa-solid fa-trophy" style="font-size: 2rem; color: #ca912a;"></i>
                     </div>
-                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Excellence</h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Commitment to the highest standards of quality</p>
+                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Designed for Efficiency</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">We craft user-friendly tools that empower professionals to maximize productivity even under the most demanding time constraints.</p>
                 </div>
             </div>
         </div>
