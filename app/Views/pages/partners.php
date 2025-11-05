@@ -27,7 +27,8 @@
                     <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
                         Collaborating with <span>Industry Leaders</span>
                     </h2>
-                    <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin-top: 20px; font-size: 1.1rem; color: #666;">
+                    <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin-top: 20px; font-size: 1.1rem; color: rgba(255, 255, 255, 0.8);">
+                        <!-- color: #666; -->
                         Excellence is proven through action, not words. Over the years, Hex Forensics has built strategic partnerships with leading government agencies, defense institutions, and technology providers worldwide. These collaborations demonstrate our commitment to delivering world-class digital forensics, cybersecurity, and investigative solutions that protect communities and solve complex crimes.
                     </p>
                 </div>
@@ -346,15 +347,15 @@
         <div class="row align-items-center">
             <div class="col-lg-8 offset-lg-2">
                 <div class="cta-content text-center wow fadeInUp">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #fff;">
+                    <!-- <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #fff;">
                         Become a <span style="color: #ca912a;">Partner</span>
-                    </h2>
-                    <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.8); margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
-                        Join our network of trusted partners and collaborate on groundbreaking forensic and security solutions. Together, we can make a difference in fighting crime and protecting communities.
-                    </p>
+                    </h2> -->
+                    <h3 style="font-size: 2.1rem; color: rgba(255, 255, 255, 0.8); margin-bottom: 30px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                        Join our network of trusted partners and collaborate on groundbreaking forensic and security solutions. Together, we are making a difference fighting crime and protecting communities.
+                    </h3>
                     <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                         <a href="<?= base_url('contact');?>" class="btn-default btn-custom-arrow" style="display: inline-block; padding: 15px 40px; background: #ca912a; color: #fff; text-decoration: none; border-radius: 5px; font-weight: 600; transition: all 0.3s ease;">
-                            Partner With Us <i class="fa-solid fa-arrow-right" style="margin-left: 8px; transform: rotate(-45deg); display: inline-block;"></i>
+                            Get in Touch<i class="fa-solid fa-arrow-right" style="margin-left: 8px; transform: rotate(-45deg); display: inline-block;"></i>
                         </a>
                         <a href="<?= base_url('services');?>" class="btn-outline btn-custom-arrow" style="display: inline-block; padding: 15px 40px; background: transparent; color: #fff; text-decoration: none; border-radius: 5px; font-weight: 600; border: 2px solid rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">
                             Our Services <i class="fa-solid fa-arrow-right" style="margin-left: 8px; transform: rotate(-45deg); display: inline-block;"></i>
