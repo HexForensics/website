@@ -18,6 +18,8 @@ $routes->get('services', 'Home::services');
 $routes->get('partners', 'Home::partners');
 $routes->get('contact', 'Home::contact');
 $routes->get('get-in-touch', 'Home::contact');
+$routes->get('report-theft', 'Home::report_theft');
+$routes->post('submit-theft-report', 'Home::submit_theft_report');
 
 $routes->group('services', [], function ($routes) {
     $routes->get('/', 'Home::services');

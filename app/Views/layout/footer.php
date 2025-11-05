@@ -57,6 +57,9 @@
                                 <li><a href="<?= base_url('services');?>">Services</a></li>
                                 <li><a href="<?= base_url('partners');?>">Partners</a></li>
                                 <li><a href="<?= base_url('get-in-touch');?>">Contact</a></li>
+                                <li><a href="<?= base_url('report-theft');?>" style="color: #ca912a;">
+                                    <i class="fa-solid fa-shield-halved" style="margin-right: 5px;"></i>Report Theft
+                                </a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->
