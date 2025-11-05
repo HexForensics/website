@@ -316,9 +316,11 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12">
-                    <div class="partnership-media" style="text-align: center;">
-                        <img src="https://www.gmdsoft.com/wp-content/uploads/2023/11/solution_img03.jpg" alt="Mobile Forensics Work" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
-                    </div>
+                    <a href="https://www.msab.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                        <div class="partnership-media" style="text-align: center; cursor: pointer; transition: transform 0.3s ease;">
+                            <img src="https://www.gmdsoft.com/wp-content/uploads/2023/11/solution_img03.jpg" alt="Mobile Forensics Work" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -349,9 +351,11 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12 order-lg-1 order-2">
-                    <div class="partnership-media" style="text-align: center;">
-                        <img src="<?= base_url('assets/images/what-we-do-img-1.jpg');?>" alt="Forensic Laboratory Setup" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
-                    </div>
+                    <a href="https://www.dia.gov.ng" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                        <div class="partnership-media" style="text-align: center; cursor: pointer; transition: transform 0.3s ease;">
+                            <img src="<?= base_url('assets/images/what-we-do-img-1.jpg');?>" alt="Forensic Laboratory Setup" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -381,9 +385,11 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12">
-                    <div class="partnership-media" style="text-align: center;">
-                        <img src="<?= base_url('assets/partners/Mile2-Hex-Cert.png');?>" alt="Cybersecurity Training" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
-                    </div>
+                    <a href="https://www.mile2.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                        <div class="partnership-media" style="text-align: center; cursor: pointer; transition: transform 0.3s ease;">
+                            <img src="<?= base_url('assets/partners/Mile2-Hex-Cert.png');?>" alt="Cybersecurity Training" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        </div>
+                    </a>
                     <!-- https://mile2.com/wp-content/uploads/PPT-slide.jpg -->
                 </div>
             </div>
@@ -414,9 +420,11 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12 order-lg-1 order-2">
-                    <div class="partnership-media" style="text-align: center;">
-                        <img src="https://www.gmdsoft.com/wp-content/uploads/2023/11/solution_img04-1.jpg" alt="Digital Forensic Software" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
-                    </div>
+                    <a href="https://www.gmdsoft.com" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                        <div class="partnership-media" style="text-align: center; cursor: pointer; transition: transform 0.3s ease;">
+                            <img src="https://www.gmdsoft.com/wp-content/uploads/2023/11/solution_img04-1.jpg" alt="Digital Forensic Software" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
