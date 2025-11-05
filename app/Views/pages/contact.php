@@ -72,7 +72,7 @@
                     </div>
                     <!-- Contact Info List End -->
 
-                    <div class="contact-us-form" style="display: block">
+                    <div class="contact-us-form" style="display: none">
                         <!-- Section Title Start -->
                         <div class="section-title dark-section wow fadeInUp">
                             <h2 class="wow fadeInUp" data-cursor="-opaque">Get in touch with us</h2>
