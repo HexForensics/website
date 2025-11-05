@@ -282,50 +282,56 @@
     <div class="container">
         <div class="section-title text-center">
             <h3 class="wow fadeInUp" style="color: #ca912a;">YOUR STRATEGIC ADVANTAGE</h3>
-            <h2 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff; margin-bottom: 60px;">
+            <h2 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff;">
                 Partnering With Us <span style="color: #ca912a;">Elevates Your Mission</span>
             </h2>
-            <!-- maybe tell a story on how partnerships have led to successful outcomes -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="wow fadeInUp" data-wow-delay="0.4s" style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; line-height: 1.7; margin-bottom: 60px;">
+                        Our collaborations are more than just business arrangements; they are powerful alliances that have consistently led to groundbreaking successes. By combining our expertise with the unique strengths of our partners, we have solved complex cases, neutralized critical threats, and delivered justice where it was needed most. When you partner with Hex Forensics, you gain a dedicated ally committed to achieving shared objectives and creating a safer world.
+                    </p>
+                </div>
+            </div>
         </div>
         
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-handshake" style="font-size: 2rem; color: #ca912a;"></i>
+                        <i class="fa-solid fa-bullhorn" style="font-size: 2rem; color: #ca912a;"></i>
                     </div>
-                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Driven by Purpose</h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Rooted in law enforcement heritage, we're dedicated to revealing the truth and safeguarding the vulnerable in every investigation.</p>
+                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Amplify Your Visibility</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Partner with us to reach dedicated professionals and decision-makers. We prioritize showcasing solutions that deliver real value to our community.</p>
                 </div>
             </div>
             
             <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" data-wow-delay="0.2s" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-magnifying-glass" style="font-size: 2rem; color: #ca912a;"></i>
+                        <i class="fa-solid fa-folder-open" style="font-size: 2rem; color: #ca912a;"></i>
                     </div>
-                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Forged in the Field</h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Created by seasoned investigators who understand the real challenges of solving complex cases from years of hands-on experience.</p>
+                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Comprehensive Partner Resources</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Equip your team for success with co-branded materials, dedicated support funds, and premium resources designed for professional engagement worldwide.</p>
                 </div>
             </div>
             
             <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" data-wow-delay="0.4s" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-users" style="font-size: 2rem; color: #ca912a;"></i>
+                        <i class="fa-solid fa-users-gear" style="font-size: 2rem; color: #ca912a;"></i>
                     </div>
-                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Your Success is Our Priority</h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Our entire team stands ready to support your mission. We actively engage with your concerns and respond swiftly to your requirements.</p>
+                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Direct Collaboration</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Beyond resources, we build genuine partnerships. Work directly with our teams to ensure optimal outcomes and exceptional experiences for mutual clients.</p>
                 </div>
             </div>
             
             <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                 <div class="benefit-item wow fadeInUp" data-wow-delay="0.6s" style="text-align: center; padding: 30px 20px;">
                     <div class="benefit-icon" style="width: 80px; height: 80px; margin: 0 auto 20px; background: rgba(202, 145, 42, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-trophy" style="font-size: 2rem; color: #ca912a;"></i>
+                        <i class="fa-solid fa-graduation-cap" style="font-size: 2rem; color: #ca912a;"></i>
                     </div>
-                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Designed for Efficiency</h4>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">We craft user-friendly tools that empower professionals to maximize productivity even under the most demanding time constraints.</p>
+                    <h4 style="color: #fff; margin-bottom: 15px; font-size: 1.2rem;">Continuous Education & Growth</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Access specialized training programs, professional certifications, and expert-led workshops that empower your team to excel as trusted partners.</p>
                 </div>
             </div>
         </div>
