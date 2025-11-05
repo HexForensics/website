@@ -27,7 +27,7 @@
                             <div class="footer-logo">
                                 <img src="<?= base_url('assets/logo/logo.png');?>" style="max-width: 160px;" alt="Hex Forensics Logo">
                                 <div style="margin-top: 10px;">
-                                    <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin: 0;">Digital Forensics & Cybersecurity Experts</p>
+                                    <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin: 0;">Digital Forensics & Cybersecurity Experts.</p>
                                 </div>
                             </div>
                             <!-- Footer Logo End -->
@@ -138,6 +138,9 @@
                                 <p style="margin: 0; color: rgba(255, 255, 255, 0.7);">
                                     Copyright © <?= date("Y"); ?> <strong style="color: #ca912a;">Hex Forensics</strong>. All Rights Reserved.
                                 </p>
+                                <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem; margin: 5px 0 0 0; font-style: italic;">
+                                    Solving Complex Investigations...
+                                </p>
                             </div>
                             <!-- Footer Copyright Text End -->
                         </div>
@@ -241,6 +244,14 @@
                 .footer-about p {
                     text-align: center !important;
                 }
+                
+                .footer-copyright-text {
+                    text-align: center !important;
+                }
+                
+                .footer-copyright-text p {
+                    text-align: center !important;
+                }
             }
             
             .footer-links ul li {
@@ -264,6 +275,17 @@
                 border-bottom: 2px solid #ca912a;
                 padding-bottom: 8px;
                 display: inline-block;
+            }
+            
+            /* Desktop and tablet styles */
+            @media (min-width: 769px) {
+                .footer-copyright-text {
+                    text-align: left;
+                }
+                
+                .footer-copyright-text p {
+                    text-align: left !important;
+                }
             }
         </style>
     </body>
