@@ -1,5 +1,5 @@
 <!-- Page Header Start -->
-<div class="page-header">
+<div class="page-header parallaxie" style="background-image: url(<?= base_url('assets/pictures/street.jpg')?>); padding-top: 120px; padding-bottom: 80px">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -134,7 +134,7 @@
 
                                 <!-- Submit Button -->
                                 <div class="form-group col-md-12 mb-0 text-center">
-                                    <button type="submit" class="btn-default" style="background: #ca912a; color: white; padding: 15px 40px; border: none; border-radius: 5px; font-weight: 600; cursor: pointer; transition: all 0.3s;">
+                                    <button type="submit" class="btn-submit-report" style="background: #ca912a; color: white; padding: 15px 40px; border: none; border-radius: 5px; font-weight: 600; cursor: pointer; transition: all 0.3s;">
                                         <i class="fa-solid fa-paper-plane" style="margin-right: 8px;"></i>
                                         Submit Report
                                     </button>
@@ -154,9 +154,9 @@
                 <!-- Report Form End -->
 
                 <!-- What Happens Next Section Start -->
-                <div class="what-next-section wow fadeInUp" data-wow-delay="0.75s" style="margin-top: 50px; background: #2C3E50; color: white; padding: 40px; border-radius: 10px;">
-                    <h3 style="color: #ca912a; margin-bottom: 20px; text-align: center;">
-                        <i class="fa-solid fa-timeline" style="margin-right: 10px;"></i>
+                <div class="what-next-section wow fadeInUp" data-wow-delay="0.75s" style="margin-top: 50px; background: #000020; color: white; padding: 40px; border-radius: 10px;">
+                    <h3 style="color: #ca912a; margin-bottom: 50px; text-align: center;">
+                        <!-- <i class="fa-solid fa-timeline" style="margin-right: 10px;"></i> -->
                         What Happens Next?
                     </h3>
                     <div class="row">
@@ -203,7 +203,7 @@
         box-shadow: 0 0 0 0.2rem rgba(202, 145, 42, 0.25) !important;
     }
     
-    .btn-default:hover {
+    .btn-submit-report:hover {
         background: #b8821f !important;
         transform: translateY(-2px);
         box-shadow: 0 5px 20px rgba(202, 145, 42, 0.4);
