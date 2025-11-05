@@ -278,6 +278,153 @@
 </div>
 <!-- Partner Categories Section End -->
 
+<!-- Featured Partnerships Section Start -->
+<div class="featured-partnerships" style="padding: 80px 0; background-color: #000020">
+    <div class="container">
+        <!-- Section Title -->
+        <!-- <div class="section-title text-center">
+            <h2 class="wow fadeInUp" style="color: #fff; margin-bottom: 20px; font-size: 2.2rem;">
+                Strategic Partnerships <span style="color: #ca912a;">Driving Excellence</span>
+            </h2>
+            <p class="wow fadeInUp" data-wow-delay="0.2s" style="color: rgba(255, 255, 255, 0.7); font-size: 1.1rem; margin-bottom: 60px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Collaborating with industry leaders and government agencies to deliver cutting-edge digital forensics solutions.
+            </p>
+        </div> -->
+
+        <!-- MSAB Partnership -->
+        <div class="partnership-item" style="background: transparent; border-radius: 12px; padding: 50px; margin-bottom: 40px;">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                    <!-- Partner Logo Section (2/3 of left column) -->
+                    <div class="partner-logo-large" style="height: 66.67%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <a href="https://www.msab.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+                            <img src="<?= base_url('assets/partners/MSAB_Certified Partner_standing_RGB_Negativ.png');?>" alt="MSAB Logo" style="max-height: 200px; max-width: 90%; object-fit: contain; cursor: pointer; transition: transform 0.3s ease;">
+                        </a>
+                    </div>
+                    
+                    <!-- Partnership Details Section (1/3 of left column) -->
+                    <div class="partnership-details" style="height: 33.33%;">
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.3; margin-bottom: 20px; text-align: justify;">
+                            Working together with MSAB, Hex Forensics is using advanced mobile forensics technology to enable an enhanced approach to digital investigations. This partnership allows examiners to better serve their agency without increasing headcount or requiring drastic investments in new forensic equipment.
+                        </p>
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.3; margin-bottom: 25px; text-align: justify;">
+                            Our collaboration brings world-class XRY technology to Africa, providing law enforcement agencies with the most advanced mobile extraction and analysis capabilities available globally. Through comprehensive training programs and ongoing support, we ensure investigators can leverage these powerful tools effectively.
+                        </p>
+                        <a href="<?= base_url('get-in-touch');?>" class="learn-more-btn" style="display: inline-block; background: #ff8c00; color: #fff; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(255, 140, 0, 0.3);">
+                            LEARN MORE
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="partnership-media" style="text-align: center;">
+                        <img src="https://www.gmdsoft.com/wp-content/uploads/2023/11/solution_img03.jpg" alt="Mobile Forensics Work" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DIA Partnership -->
+        <div class="partnership-item" style="background: transparent; border-radius: 12px; padding: 50px; margin-bottom: 40px;">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-4 order-lg-2 order-1">
+                    <!-- Partner Logo Section (2/3 of right column) -->
+                    <div class="partner-logo-large" style="height: 66.67%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <a href="https://www.dia.gov.ng" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+                            <img src="<?= base_url('assets/partners/dia.png');?>" alt="DIA Logo" style="max-height: 200px; max-width: 90%; object-fit: contain; cursor: pointer; transition: transform 0.3s ease;">
+                        </a>
+                    </div>
+                    
+                    <!-- Partnership Details Section (1/3 of right column) -->
+                    <div class="partnership-details" style="height: 33.33%;">
+                        <h3 style="color: #fff; font-size: 2.2rem; font-weight: 700; margin-bottom: 15px; text-align: center;">Defence Intelligence Agency (DIA)</h3>
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.3; margin-bottom: 20px; text-align: justify;">
+                            Hex Forensics has had the privilege of partnering with the Defence Intelligence Agency (DIA) to establish a state-of-the-art digital forensic laboratory. This groundbreaking project represents a significant milestone in enhancing Nigeria's military intelligence and digital investigation capabilities.
+                        </p>
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.3; margin-bottom: 25px; text-align: justify;">
+                            Our comprehensive approach included designing and building a fully equipped forensic lab with cutting-edge technology, providing specialized training programs for DIA personnel, and establishing protocols for advanced digital investigations. This partnership ensures Nigeria's defence intelligence operations have access to world-class forensic capabilities and expertise.
+                        </p>
+                        <a href="<?= base_url('get-in-touch');?>" class="learn-more-btn" style="display: inline-block; background: #ff8c00; color: #fff; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(255, 140, 0, 0.3);">
+                            LEARN MORE
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 order-lg-1 order-2">
+                    <div class="partnership-media" style="text-align: center;">
+                        <img src="<?= base_url('assets/images/what-we-do-img-1.jpg');?>" alt="Forensic Laboratory Setup" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mile2 Partnership -->
+        <div class="partnership-item" style="background: transparent; border-radius: 12px; padding: 50px; margin-bottom: 40px;">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                    <!-- Partner Logo Section (2/3 of left column) -->
+                    <div class="partner-logo-large" style="height: 66.67%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <a href="https://www.mile2.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+                            <img src="<?= base_url('assets/partners/Mile2-Logo-Cyber-Certs.png');?>" alt="Mile2 Logo" style="max-height: 200px; max-width: 90%; object-fit: contain; cursor: pointer; transition: transform 0.3s ease;">
+                        </a>
+                    </div>
+                    
+                    <!-- Partnership Details Section (1/3 of left column) -->
+                    <div class="partnership-details" style="height: 33.33%;">
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.3; margin-bottom: 20px; text-align: justify;">
+                            Through our partnership with Mile2, Hex Forensics delivers world-class cybersecurity certifications and training programs across Africa. This strategic alliance enables us to offer internationally recognized credentials that advance professional development in the cybersecurity field.
+                        </p>
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.3; margin-bottom: 25px; text-align: justify;">
+                            Together, we're building the next generation of information security professionals with comprehensive hands-on training, industry-recognized certifications, and expert-led workshops. Our training programs ensure professionals gain practical skills that directly translate to enhanced security capabilities in their organizations.
+                        </p>
+                        <a href="<?= base_url('get-in-touch');?>" class="learn-more-btn" style="display: inline-block; background: #ff8c00; color: #fff; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(255, 140, 0, 0.3);">
+                            LEARN MORE
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="partnership-media" style="text-align: center;">
+                        <img src="<?= base_url('assets/partners/Mile2-Hex-Cert.png');?>" alt="Cybersecurity Training" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                    </div>
+                    <!-- https://mile2.com/wp-content/uploads/PPT-slide.jpg -->
+                </div>
+            </div>
+        </div>
+
+        <!-- GMDSoft Partnership -->
+        <div class="partnership-item" style="background: transparent; border-radius: 12px; padding: 50px; margin-bottom: 40px;">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-12 mb-lg-0 mb-4 order-lg-2 order-1">
+                    <!-- Partner Logo Section (2/3 of right column) -->
+                    <div class="partner-logo-large" style="height: 66.67%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                        <a href="https://www.gmdsoft.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+                            <img src="https://www.gmdsoft.com/wp-content/uploads/2024/04/GMDSOFT_WT_Logo_Line.png" alt="GMDSoft Logo" style="max-height: 500px; max-width: 90%; object-fit: contain; cursor: pointer; transition: transform 0.3s ease;">
+                        </a>
+                    </div>
+                    
+                    <!-- Partnership Details Section (1/3 of right column) -->
+                    <div class="partnership-details" style="height: 33.33%;">
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.3; margin-bottom: 20px; text-align: justify;">
+                            As the top trusted partner and exclusive distributor for GMDSoft in Nigeria, Hex Forensics brings world-class digital forensic software and investigation tools to law enforcement agencies across the country. This strategic partnership positions us as the premier provider of GMDSoft's innovative forensic solutions in West Africa.
+                        </p>
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; line-height: 1.3; margin-bottom: 25px; text-align: justify;">
+                            Our collaboration ensures Nigerian investigators have access to cutting-edge forensic software, comprehensive training programs, and ongoing technical support. Through this partnership, we deliver GMDSoft's advanced digital investigation capabilities while providing localized expertise and support that meets the specific needs of Nigerian law enforcement and security agencies.
+                        </p>
+                        <a href="<?= base_url('get-in-touch');?>" class="learn-more-btn" style="display: inline-block; background: #ff8c00; color: #fff; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; box-shadow: 0 3px 10px rgba(255, 140, 0, 0.3);">
+                            LEARN MORE
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 order-lg-1 order-2">
+                    <div class="partnership-media" style="text-align: center;">
+                        <img src="https://www.gmdsoft.com/wp-content/uploads/2023/11/solution_img04-1.jpg" alt="Digital Forensic Software" style="width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Featured Partnerships Section End -->
+
 <!-- Partnership Benefits Section Start -->
 <div class="partnership-benefits" style="padding: 80px 0; background-color: #000020;">
     <div class="container">
@@ -340,33 +487,120 @@
 </div>
 <!-- Partnership Benefits Section End -->
 
-<!-- Call to Action Section Start -->
-<div class="partner-cta" style="padding: 80px 0; background-color: var(--dark-divider-color) ;">
-    <!-- #fff; white. rgba(255, 255, 255, 0.05)-dark-->
+<!-- Strategic CTAs Section Start -->
+<div class="strategic-ctas" style="padding: 80px 0; background: linear-gradient(135deg, #000020 0%, rgba(202, 145, 42, 0.08) 50%, #000020 100%);">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="cta-content text-center wow fadeInUp">
-                    <!-- <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #fff;">
-                        Become a <span style="color: #ca912a;">Partner</span>
-                    </h2> -->
-                    <h3 style="font-size: 2.1rem; color: rgba(255, 255, 255, 0.8); margin-bottom: 30px; max-width: 900px; margin-left: auto; margin-right: auto;">
-                        Join our network of trusted partners and collaborate on groundbreaking forensic and security solutions. Together, we are making a difference fighting crime and protecting communities.
-                    </h3>
-                    <div class="cta-buttons" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                        <a href="<?= base_url('contact');?>" class="btn-default btn-custom-arrow" style="display: inline-block; padding: 15px 40px; background: #ca912a; color: #fff; text-decoration: none; border-radius: 5px; font-weight: 600; transition: all 0.3s ease;">
-                            Get in Touch<i class="fa-solid fa-arrow-right" style="margin-left: 8px; transform: rotate(-45deg); display: inline-block;"></i>
-                        </a>
-                        <a href="<?= base_url('services');?>" class="btn-outline btn-custom-arrow" style="display: inline-block; padding: 15px 40px; background: transparent; color: #fff; text-decoration: none; border-radius: 5px; font-weight: 600; border: 2px solid rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">
-                            Our Services <i class="fa-solid fa-arrow-right" style="margin-left: 8px; transform: rotate(-45deg); display: inline-block;"></i>
-                        </a>
+        <!-- Primary Partnership CTA -->
+        <div class="row mb-5">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="primary-cta wow fadeInUp" style="text-align: center; background: transparent; padding: 40px 30px; border-radius: 10px; position: relative; overflow: hidden;">
+                    <!-- <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, transparent 30%, rgba(202, 145, 42, 0.05) 50%, transparent 70%); z-index: 1;"></div> -->
+                    <div style="position: relative; z-index: 2;">
+                        <!-- <h2 style="color: #fff; font-size: 2rem; margin-bottom: 15px; font-weight: 600;">
+                            Ready to <span style="color: #ca912a;">Partner</span> with Us?
+                        </h2> -->
+                        <h5 style="color: rgba(255, 255, 255, 0.8); font-size: 1.5rem; margin-bottom: 25px; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.5;">
+                            Join our network of government agencies, technology leaders, and training organizations. Together, we're advancing digital forensics and cybersecurity across Africa.
+                        </h5>
+                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                            <a href="<?= base_url('get-in-touch');?>" class="cta-primary" style="display: inline-flex; align-items: center; padding: 12px 25px; background: #ca912a; filter: grayscale(0%) brightness(1.1); color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.95rem; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(202, 145, 42, 0.2);">
+                                <i class="fa-solid fa-handshake" style="margin-right: 8px; font-size: 1rem;"></i>
+                                Start Partnership Discussion
+                            </a>
+                            <a href="<?= base_url('about-us');?>" class="cta-secondary" style="display: inline-flex; align-items: center; padding: 12px 25px; background: transparent; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 500; font-size: 0.95rem; border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.3s ease;">
+                                <i class="fa-solid fa-building" style="margin-right: 8px; font-size: 0.95rem;"></i>
+                                Learn About Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Multi-Path CTAs Grid -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="pathway-cta wow fadeInUp" style="background: linear-gradient(135deg, rgba(0, 0, 32, 0.4) 0%, rgba(202, 145, 42, 0.03) 100%); padding: 25px 20px; border-radius: 8px; text-align: center; height: 100%; transition: all 0.3s ease;">
+                    <div class="pathway-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(202, 145, 42, 0.12) 0%, rgba(202, 145, 42, 0.06) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px;">
+                        <i class="fa-solid fa-shield-halved" style="color: #ca912a; font-size: 1.4rem;"></i>
+                    </div>
+                    <h4 style="color: #fff; margin-bottom: 12px; font-size: 1.1rem;">Government Agencies</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 18px; line-height: 1.5; font-size: 0.9rem;">
+                        Enhance your investigative capabilities with cutting-edge digital forensics solutions and specialized training programs.
+                    </p>
+                    <a href="<?= base_url('get-in-touch');?>" class="pathway-btn" style="display: inline-flex; align-items: center; padding: 8px 16px; background: rgba(202, 145, 42, 0.15); color: #ca912a; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 0.85rem; transition: all 0.3s ease;">
+                        Explore Solutions
+                        <i class="fa-solid fa-arrow-right" style="margin-left: 6px; font-size: 0.8rem;"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="pathway-cta wow fadeInUp" data-wow-delay="0.2s" style="background: linear-gradient(135deg, rgba(0, 0, 32, 0.4) 0%, rgba(202, 145, 42, 0.03) 100%); padding: 25px 20px; border-radius: 8px; text-align: center; height: 100%; transition: all 0.3s ease;">
+                    <div class="pathway-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(202, 145, 42, 0.12) 0%, rgba(202, 145, 42, 0.06) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px;">
+                        <i class="fa-solid fa-microchip" style="color: #ca912a; font-size: 1.4rem;"></i>
+                    </div>
+                    <h4 style="color: #fff; margin-bottom: 12px; font-size: 1.1rem;">Technology Partners</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 18px; line-height: 1.5; font-size: 0.9rem;">
+                        Join our technology ecosystem to deliver innovative forensic tools and expand market reach across Africa.
+                    </p>
+                    <a href="<?= base_url('get-in-touch');?>" class="pathway-btn" style="display: inline-flex; align-items: center; padding: 8px 16px; background: rgba(202, 145, 42, 0.15); color: #ca912a; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 0.85rem; transition: all 0.3s ease;">
+                        Technology Integration
+                        <i class="fa-solid fa-arrow-right" style="margin-left: 6px; font-size: 0.8rem;"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="pathway-cta wow fadeInUp" data-wow-delay="0.4s" style="background: linear-gradient(135deg, rgba(0, 0, 32, 0.4) 0%, rgba(202, 145, 42, 0.03) 100%); padding: 25px 20px; border-radius: 8px; text-align: center; height: 100%; transition: all 0.3s ease;">
+                    <div class="pathway-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(202, 145, 42, 0.12) 0%, rgba(202, 145, 42, 0.06) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px;">
+                        <i class="fa-solid fa-graduation-cap" style="color: #ca912a; font-size: 1.4rem;"></i>
+                    </div>
+                    <h4 style="color: #fff; margin-bottom: 12px; font-size: 1.1rem;">Training Organizations</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 18px; line-height: 1.5; font-size: 0.9rem;">
+                        Collaborate with us to deliver world-class cybersecurity and digital forensics training across the continent.
+                    </p>
+                    <a href="<?= base_url('get-in-touch');?>" class="pathway-btn" style="display: inline-flex; align-items: center; padding: 8px 16px; background: rgba(202, 145, 42, 0.15); color: #ca912a; text-decoration: none; border-radius: 5px; font-weight: 500; font-size: 0.85rem; transition: all 0.3s ease;">
+                        Training Partnerships
+                        <i class="fa-solid fa-arrow-right" style="margin-left: 6px; font-size: 0.8rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Information Banner -->
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="contact-banner wow fadeInUp" style="background: linear-gradient(135deg, rgba(0, 0, 32, 0.6) 0%, rgba(202, 145, 42, 0.08) 50%, rgba(0, 0, 32, 0.6) 100%); padding: 25px; border-radius: 8px; text-align: center; border: 1px solid rgba(202, 145, 42, 0.2);">
+                    <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 30px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <i class="fa-solid fa-phone" style="color: #ca912a; font-size: 1.2rem;"></i>
+                            <div>
+                                <p style="color: rgba(255, 255, 255, 0.6); margin: 0; font-size: 0.8rem;">Call Us</p>
+                                <p style="color: #fff; margin: 0; font-weight: 500; font-size: 0.95rem;">+234 906 677 9939</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <i class="fa-solid fa-envelope" style="color: #ca912a; font-size: 1.2rem;"></i>
+                            <div>
+                                <p style="color: rgba(255, 255, 255, 0.6); margin: 0; font-size: 0.8rem;">Email Us</p>
+                                <p style="color: #fff; margin: 0; font-weight: 500; font-size: 0.95rem;">info@hexforensics.com</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <i class="fa-solid fa-calendar-days" style="color: #ca912a; font-size: 1.2rem;"></i>
+                            <div>
+                                <p style="color: rgba(255, 255, 255, 0.6); margin: 0; font-size: 0.8rem;">Schedule</p>
+                                <p style="color: #fff; margin: 0; font-weight: 500; font-size: 0.95rem;">Book a Consultation</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Call to Action Section End -->
+<!-- Strategic CTAs Section End -->
 
 
 <style>
@@ -565,6 +799,163 @@
         
         .benefit-icon i {
             font-size: 1.2rem !important;
+        }
+    }
+    
+    /* Featured Partnerships Styling */
+    .partnership-item {
+        min-height: 600px;
+    }
+    
+    .partner-logo-large {
+        min-height: 400px;
+    }
+    
+    .partner-logo-large img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    
+    .partnership-details {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .learn-more-btn:hover {
+        background: #e67c00 !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 140, 0, 0.4) !important;
+    }
+    
+    .partnership-btn:hover {
+        background: #b8821f !important;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(202, 145, 42, 0.3);
+    }
+    
+    .partnership-cta:hover {
+        border-color: rgba(202, 145, 42, 0.4) !important;
+        background: rgba(202, 145, 42, 0.08) !important;
+    }
+    
+    .partnership-media img:hover {
+        transform: scale(1.03);
+        transition: transform 0.4s ease;
+    }
+    
+    /* Partnership Details Styling */
+    .partnership-details h3 {
+        position: relative;
+    }
+    
+    .partnership-details h3::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: #ff8c00;
+        border-radius: 2px;
+    }
+    
+    /* Responsive Adjustments for Featured Partnerships */
+    @media (max-width: 768px) {
+        .featured-partnerships {
+            padding: 60px 0 !important;
+        }
+        .partnership-item {
+            padding: 40px 25px !important;
+            margin-bottom: 30px !important;
+            min-height: auto !important;
+        }
+        .partnership-item h3 {
+            font-size: 1.8rem !important;
+            margin-bottom: 20px !important;
+        }
+        .partnership-item .col-lg-6 {
+            margin-bottom: 30px !important;
+        }
+        .partner-logo-large {
+            margin-bottom: 25px !important;
+            height: auto !important;
+            min-height: auto !important;
+        }
+        .partner-logo-large img {
+            max-height: 120px !important;
+        }
+        .partnership-details {
+            height: auto !important;
+            min-height: auto !important;
+        }
+        .partnership-media img {
+            max-width: 100% !important;
+            border-radius: 8px !important;
+        }
+        .partnership-cta {
+            padding: 30px 20px !important;
+        }
+        .partnership-details p {
+            font-size: 1rem !important;
+            text-align: left !important;
+        }
+        .learn-more-btn {
+            width: 100%;
+            text-align: center;
+            padding: 15px 30px !important;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .partnership-item {
+            padding: 30px 20px !important;
+        }
+        .partnership-item h3 {
+            font-size: 1.6rem !important;
+        }
+        .partnership-details p {
+            font-size: 0.95rem !important;
+        }
+        .partner-logo-large img {
+            max-height: 100px !important;
+        }
+    }
+    
+    /* Contact Banner Hover Effects */
+    .contact-banner:hover {
+        border-color: rgba(202, 145, 42, 0.4) !important;
+        background: linear-gradient(135deg, rgba(202, 145, 42, 0.2) 0%, rgba(202, 145, 42, 0.08) 100%) !important;
+    }
+    
+    /* Mobile Responsive for Strategic CTAs */
+    @media (max-width: 768px) {
+        .strategic-ctas {
+            padding: 60px 0 !important;
+        }
+        .primary-cta {
+            padding: 40px 25px !important;
+        }
+        .primary-cta h2 {
+            font-size: 2.2rem !important;
+        }
+        .primary-cta p {
+            font-size: 1.1rem !important;
+        }
+        .primary-cta div {
+            flex-direction: column !important;
+            gap: 15px !important;
+        }
+        .cta-primary,
+        .cta-secondary {
+            width: 100%;
+            justify-content: center !important;
+        }
+        .contact-banner > div {
+            flex-direction: column !important;
+            gap: 25px !important;
         }
     }
 </style>
