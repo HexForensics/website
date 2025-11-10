@@ -16,7 +16,7 @@
                 <div class="why-choose-content">
                     <!-- Section Title Start -->
                     <div class="section-title dark-section">
-                        <h3 class="wow fadeInUp">why choose us</h3>
+                        <!-- <h3 class="wow fadeInUp">why choose us</h3> -->
                         <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Uncompromising security, unmatched forensic precision</h2>
                     </div>
                     <!-- Section Title End -->
