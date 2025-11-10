@@ -15,7 +15,9 @@
             <?= view("page_sections/trusted_by");?>
         <?php endif;?>
         <!-- Partner Logos Section End -->
+
         <div style="width: 100%; height: 4px; background-color: #ca912a"></div>
+        
         <!-- Main Footer Section Start -->
         <footer class="main-footer" style="padding: 0px 0 0 0;">
             <div class="container pt-5">
@@ -99,7 +101,7 @@
                                 <li><a href="<?= base_url('services/fraud-investigation');?>">Digital Forensics</a></li>
                                 <li><a href="<?= base_url('services/cyber-security');?>">Cyber Security</a></li>
                                 <!-- <li><a href="javascript:{}">Asset Tracing</a></li> -->
-                                <li><a href="<?= base_url('services/communication-intelligence');?>">Cyber Intelligence (COMINT)</a></li>
+                                <li><a href="<?= base_url('services/communication-intelligence');?>">Intelligence (COMINT)</a></li>
                                 <li><a href="javascript:{}">Training & Education</a></li>
                             </ul>
                         </div>
