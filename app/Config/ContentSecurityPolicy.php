@@ -47,28 +47,28 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string|null
      */
-    public $defaultSrc;
+    public $defaultSrc = 'self';
 
     /**
      * Lists allowed scripts' URLs.
      *
      * @var list<string>|string
      */
-    public $scriptSrc = 'self';
+    public array $scriptSrc = ['self', 'https://cdnjs.cloudflare.com'];
 
     /**
      * Lists allowed stylesheets' URLs.
      *
      * @var list<string>|string
      */
-    public $styleSrc = 'self';
+    public array $styleSrc = ['self', 'unsafe-inline', 'https://fonts.googleapis.com'];
 
     /**
      * Defines the origins from which images can be loaded.
      *
      * @var list<string>|string
      */
-    public $imageSrc = 'self';
+    public array $imageSrc = ['self', 'data:', 'https:'];
 
     /**
      * Restricts the URLs that can appear in a page's `<base>` element.
@@ -77,7 +77,7 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string|null
      */
-    public $baseURI;
+    public string $baseURI = 'self';
 
     /**
      * Lists the URLs for workers and embedded frame contents
@@ -92,14 +92,14 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string
      */
-    public $connectSrc = 'self';
+    public array $connectSrc = ['self'];
 
     /**
      * Specifies the origins that can serve web fonts.
      *
      * @var list<string>|string
      */
-    public $fontSrc;
+    public array $fontSrc = ['self', 'https://fonts.gstatic.com', 'data:'];
 
     /**
      * Lists valid endpoints for submission from `<form>` tags.
@@ -116,7 +116,7 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string|null
      */
-    public $frameAncestors;
+    public string $frameAncestors = 'none';
 
     /**
      * The frame-src directive restricts the URLs which may
@@ -138,7 +138,7 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string
      */
-    public $objectSrc = 'self';
+    public string $objectSrc = 'none';
 
     /**
      * @var list<string>|string|null
