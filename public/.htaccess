@@ -71,7 +71,8 @@ ServerSignature Off
 	Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 
 	# Content Security Policy - Defense against XSS and injection attacks
-	Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com 'sha512-VJuc9M9GyHz+6aJ/ICed88LLa8fYSDoM07ADPXr1k/dSQ3eECCOCQvP96Cs6ytJYKmftN1yq3+yxg4vJ4uE/mg=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; require-trusted-types-for 'script'; upgrade-insecure-requests"
+	# Note: CodeIgniter will inject nonce values dynamically for {csp-script-nonce}
+	Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com 'sha512-VJuc9M9GyHz+6aJ/ICed88LLa8fYSDoM07ADPXr1k/dSQ3eECCOCQvP96Cs6ytJYKmftN1yq3+yxg4vJ4uE/mg==' 'strict-dynamic' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; require-trusted-types-for 'script'; upgrade-insecure-requests"
 
 	# P3: Remove PHP version exposure
 	Header unset X-Powered-By

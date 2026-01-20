@@ -179,7 +179,7 @@
     }
 </style>
 
-<script>
+<script nonce="{csp-script-nonce}">
     document.addEventListener('DOMContentLoaded', function() {
         const marquee = document.getElementById('partnerLogosTrack');
         if (!marquee) return;

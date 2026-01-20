@@ -968,7 +968,7 @@
     }
 </style>
 
-<script>
+<script nonce="{csp-script-nonce}">
     document.addEventListener('DOMContentLoaded', function() {
         // Government Partners Marquee (Left to Right)
         const governmentMarquee = document.getElementById('governmentPartnersTrack');

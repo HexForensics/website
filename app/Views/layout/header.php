@@ -190,7 +190,7 @@
     <body style="background-color: #000020">
 
         <!-- Content Protection Start -->
-        <script>
+        <script nonce="{csp-script-nonce}">
             // Whitelist: Elements where copy/paste is allowed
             const allowCopySelectors = [
                 'input[type="text"]',
