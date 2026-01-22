@@ -12,6 +12,8 @@ use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\PageCache;
 use CodeIgniter\Filters\PerformanceMetrics;
 use CodeIgniter\Filters\SecureHeaders;
+use App\Filters\RateLimitFilter;
+use App\Filters\BotDetectionFilter;
 
 class Filters extends BaseFilters
 {
@@ -34,6 +36,8 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        'ratelimit'     => RateLimitFilter::class,
+        'botdetection'  => BotDetectionFilter::class,
     ];
 
     /**
@@ -51,11 +55,10 @@ class Filters extends BaseFilters
      */
     public array $required = [
         'before' => [
-            'forcehttps', // Force Global Secure Requests
-            'pagecache',  // Web Page Caching
+            // 'pagecache',  // Web Page Caching - disabled due to cache key issues
         ],
         'after' => [
-            'pagecache',   // Web Page Caching
+            // 'pagecache',   // Web Page Caching - disabled due to cache key issues
             'performance', // Performance Metrics
             'toolbar',     // Debug Toolbar
         ],
@@ -70,8 +73,10 @@ class Filters extends BaseFilters
     public array $globals = [
         'before' => [
             // 'honeypot',
-            // 'csrf',
+            'csrf' => ['except' => ['sitemap.xml', 'sitemap', 'robots.txt']],
             'invalidchars',
+            'ratelimit',
+            'botdetection',
         ],
         'after' => [
             // 'honeypot',
@@ -104,4 +109,25 @@ class Filters extends BaseFilters
      * @var array<string, array<string, list<string>>>
      */
     public array $filters = [];
+
+    /**
+     * Constructor - conditionally add filters based on environment
+     */
+    public function __construct()
+    {
+        parent::__construct();
+
+        // Only force HTTPS in production
+        if (ENVIRONMENT === 'production') {
+            array_unshift($this->required['before'], 'forcehttps');
+        }
+
+        // Only show debug toolbar in development
+        if (ENVIRONMENT !== 'development') {
+            $this->required['after'] = array_filter(
+                $this->required['after'],
+                fn($filter) => $filter !== 'toolbar'
+            );
+        }
+    }
 }
