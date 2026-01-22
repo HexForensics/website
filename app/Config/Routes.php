@@ -20,6 +20,11 @@ $routes->get('contact', 'Home::contact');
 $routes->get('get-in-touch', 'Home::contact');
 $routes->get('report-theft', 'Home::report_theft');
 $routes->post('submit-theft-report', 'Home::submit_theft_report');
+$routes->post('submit-contact', 'Home::submit_contact');
+
+// SEO: Sitemap
+$routes->get('sitemap.xml', 'Sitemap::index');
+$routes->get('sitemap', 'Sitemap::index');
 
 $routes->group('services', [], function ($routes) {
     $routes->get('/', 'Home::services');

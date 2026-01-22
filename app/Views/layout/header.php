@@ -1,17 +1,91 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
     <head>
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <meta name="description" content="<?= isset($meta_description) ? esc($meta_description) : 'Hex Forensics - Expert Digital Forensics, Cyber Security, and Investigation Services in Nigeria and Africa.'; ?>">
+        <meta name="keywords" content="<?= isset($meta_keywords) ? esc($meta_keywords) : 'digital forensics, cyber security, fraud investigation, intelligence, Nigeria, Africa'; ?>">
         <meta name="author" content="Hex Forensics">
+        <meta name="robots" content="index, follow">
+        
+        <!-- Canonical URL -->
+        <link rel="canonical" href="<?= isset($canonical_url) ? $canonical_url : current_url(); ?>">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="<?= current_url(); ?>">
+        <meta property="og:title" content="<?= $page_title; ?> - Hex Forensics">
+        <meta property="og:description" content="<?= isset($meta_description) ? esc($meta_description) : 'Expert Digital Forensics, Cyber Security, and Investigation Services'; ?>">
+        <meta property="og:image" content="<?= base_url('assets/logo/og-image.png'); ?>">
+        <meta property="og:site_name" content="Hex Forensics">
+        <meta property="og:locale" content="en_NG">
+        
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="<?= current_url(); ?>">
+        <meta name="twitter:title" content="<?= $page_title; ?> - Hex Forensics">
+        <meta name="twitter:description" content="<?= isset($meta_description) ? esc($meta_description) : 'Expert Digital Forensics, Cyber Security, and Investigation Services'; ?>">
+        <meta name="twitter:image" content="<?= base_url('assets/logo/og-image.png'); ?>">
+        
         <!-- Page Title -->
         <title><?= $page_title;?> - Hex Forensics</title>
         <!-- Favicon Icon -->
         <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/logo/favicon.png');?>">
+        
+        <!-- JSON-LD Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Hex Forensics",
+            "url": "<?= base_url(); ?>",
+            "logo": "<?= base_url('assets/logo/logo.png'); ?>",
+            "description": "Expert Digital Forensics, Cyber Security, Fraud Investigation, and Intelligence Services",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Abuja",
+                "addressCountry": "NG"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+234-90-6677-9939",
+                "contactType": "customer service",
+                "email": "info@hexforensics.com",
+                "availableLanguage": ["English"]
+            },
+            "sameAs": []
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Hex Forensics",
+            "image": "<?= base_url('assets/logo/logo.png'); ?>",
+            "url": "<?= base_url(); ?>",
+            "telephone": "+234-90-6677-9939",
+            "email": "info@hexforensics.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Abuja",
+                "addressRegion": "FCT",
+                "addressCountry": "NG"
+            },
+            "priceRange": "$$",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "17:00"
+            }
+        }
+        </script>
+        
+        <!-- Cloudflare Turnstile -->
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+        
         <!-- Google Fonts Css-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
