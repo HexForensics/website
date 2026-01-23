@@ -158,6 +158,10 @@
             padding: 40px 0 !important;
         }
         
+        .trusted-by-section h2 {
+            font-size: 1.5rem !important;
+        }
+        
         .partner-logos-marquee {
             padding: 20px 0 !important;
         }
