@@ -1,8 +1,8 @@
 # Security Posture Document
 
 **Hex Forensics Website**  
-**Document Version:** 1.0.0  
-**Last Updated:** 2026-01-22  
+**Document Version:** 1.1.0  
+**Last Updated:** 2026-01-23  
 **Classification:** Internal Use  
 
 ---
@@ -11,6 +11,7 @@
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
+| 1.1.0 | 2026-01-23 | Security Team | Updated CSP implementation to use nonce-based inline scripts |
 | 1.0.0 | 2026-01-22 | Security Team | Initial security posture documentation |
 
 ---
@@ -327,11 +328,14 @@ Violations may result in legal action.
 
 ### 4.2 Content Security Policy (CSP)
 
-**Status:** ✅ Active  
+**File:** [app/Config/ContentSecurityPolicy.php](../../app/Config/ContentSecurityPolicy.php)  
+**Status:** ✅ Active (Managed by CodeIgniter)  
+
+CSP is managed by CodeIgniter's `ContentSecurityPolicy` class with **dynamic nonce generation** for inline scripts. The `secureheaders` filter automatically generates unique nonces for each page load and replaces `{csp-script-nonce}` placeholders in HTML.
 
 ```
 default-src 'self';
-script-src 'self' https://cdnjs.cloudflare.com https://challenges.cloudflare.com 'strict-dynamic' 'unsafe-inline';
+script-src 'self' https://cdnjs.cloudflare.com https://challenges.cloudflare.com 'unsafe-inline' 'nonce-{random}';
 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
 font-src 'self' https://fonts.gstatic.com data:;
 img-src 'self' data: https:;
@@ -340,7 +344,6 @@ frame-src https://challenges.cloudflare.com;
 frame-ancestors 'none';
 base-uri 'self';
 object-src 'none';
-require-trusted-types-for 'script';
 upgrade-insecure-requests
 ```
 
@@ -349,10 +352,29 @@ upgrade-insecure-requests
 | Directive | Purpose |
 |-----------|---------|
 | `default-src 'self'` | Only allow resources from same origin by default |
-| `script-src` | Allow scripts from self, CDN, and Cloudflare Turnstile |
+| `script-src` | Allow scripts from self, CDN, Cloudflare + nonce-based inline scripts |
+| `'unsafe-inline'` | Fallback for older browsers that don't support nonces |
+| `'nonce-{random}'` | Dynamic nonce for inline scripts (auto-generated per page load) |
 | `frame-ancestors 'none'` | Prevent page from being embedded in iframes |
 | `object-src 'none'` | Block Flash and other plugins |
 | `upgrade-insecure-requests` | Auto-upgrade HTTP to HTTPS |
+
+#### Nonce Implementation
+
+All inline scripts use the nonce tag:
+
+```html
+<script nonce="{csp-script-nonce}">
+    // Your inline JavaScript here
+</script>
+```
+
+CodeIgniter's `autoNonce = true` setting automatically:
+1. Generates a cryptographically secure random nonce
+2. Replaces `{csp-script-nonce}` in HTML with the actual nonce
+3. Adds the nonce to the CSP header sent to the browser
+
+> ⚠️ **Important:** CSP is NOT set in `.htaccess` to allow CodeIgniter's dynamic nonce generation. Static CSP headers would break inline scripts.
 
 ### 4.3 Server Information Removal
 
@@ -521,7 +543,7 @@ Complete setup guides are available:
 
 | File | Purpose |
 |------|---------|
-| [public/.htaccess](../../public/.htaccess) | Apache security headers and CSP |
+| [public/.htaccess](../../public/.htaccess) | Apache security headers (HSTS, X-Frame-Options, etc.) |
 | [public/robots.txt](../../public/robots.txt) | Crawler access control |
 
 ### 9.4 Views with Security Features
