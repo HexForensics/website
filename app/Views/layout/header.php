@@ -17,8 +17,13 @@
         <meta property="og:type" content="website">
         <meta property="og:url" content="<?= current_url(); ?>">
         <meta property="og:title" content="<?= $page_title; ?> - Hex Forensics">
-        <meta property="og:description" content="<?= isset($meta_description) ? esc($meta_description) : 'Expert Digital Forensics, Cyber Security, and Investigation Services'; ?>">
+        <meta property="og:description" content="<?= isset($meta_description) ? esc($meta_description) : 'Expert Digital Forensics, Cyber Security, and Investigation Services in Nigeria and Africa'; ?>">
         <meta property="og:image" content="<?= base_url('assets/logo/og-image.png'); ?>">
+        <meta property="og:image:secure_url" content="<?= base_url('assets/logo/og-image.png'); ?>">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Hex Forensics - Digital Forensics & Cyber Security Experts">
         <meta property="og:site_name" content="Hex Forensics">
         <meta property="og:locale" content="en_NG">
         
@@ -26,13 +31,16 @@
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:url" content="<?= current_url(); ?>">
         <meta name="twitter:title" content="<?= $page_title; ?> - Hex Forensics">
-        <meta name="twitter:description" content="<?= isset($meta_description) ? esc($meta_description) : 'Expert Digital Forensics, Cyber Security, and Investigation Services'; ?>">
+        <meta name="twitter:description" content="<?= isset($meta_description) ? esc($meta_description) : 'Expert Digital Forensics, Cyber Security, and Investigation Services in Nigeria and Africa'; ?>">
         <meta name="twitter:image" content="<?= base_url('assets/logo/og-image.png'); ?>">
+        <meta name="twitter:image:alt" content="Hex Forensics - Digital Forensics & Cyber Security Experts">
         
         <!-- Page Title -->
         <title><?= $page_title;?> - Hex Forensics</title>
         <!-- Favicon Icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/logo/favicon.png');?>">
+        <link rel="icon" type="image/png" href="<?= base_url('assets/logo/favicon.png');?>">
+        <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/logo/favicon.png');?>">
+        <link rel="apple-touch-icon" href="<?= base_url('assets/logo/logo.png');?>">
         
         <!-- JSON-LD Structured Data -->
         <script type="application/ld+json">
