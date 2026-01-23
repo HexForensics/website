@@ -204,14 +204,19 @@
 		/* Ajax call to submit form */
 		$.ajax({
 			type: "POST",
-			url: "form-process.php",
+			url: "/submit-contact",
 			data: $contactform.serialize(),
-			success : function(text){
-				if (text === "success"){
+			dataType: "json",
+			success : function(response){
+				if (response.status === "success"){
 					formSuccess();
+					submitMSG(true, response.message);
 				} else {
-					submitMSG(false,text);
+					submitMSG(false, response.message);
 				}
+			},
+			error: function(xhr, status, error) {
+				submitMSG(false, "An error occurred. Please try again or email us directly.");
 			}
 		});
 	}

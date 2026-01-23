@@ -92,7 +92,7 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string
      */
-    public array $connectSrc = ['self'];
+    public array $connectSrc = ['self', 'https://challenges.cloudflare.com'];
 
     /**
      * Specifies the origins that can serve web fonts.
@@ -124,7 +124,7 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string|null
      */
-    public $frameSrc;
+    public $frameSrc = ['https://challenges.cloudflare.com'];
 
     /**
      * Restricts the origins allowed to deliver video and audio.

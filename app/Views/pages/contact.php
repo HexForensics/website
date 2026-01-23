@@ -72,7 +72,7 @@
                     </div>
                     <!-- Contact Info List End -->
 
-                    <div class="contact-us-form" style="display: none">
+                    <div class="contact-us-form">
                         <!-- Section Title Start -->
                         <div class="section-title dark-section wow fadeInUp">
                             <h2 class="wow fadeInUp" data-cursor="-opaque">Get in touch with us</h2>
@@ -80,7 +80,8 @@
                         <!-- Section Title End -->
 
                         <div class="member-contact-form contact-form">
-                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.2s">
+                            <form id="contactForm" action="<?= base_url('submit-contact'); ?>" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.2s">
+                                <?= csrf_field() ?>
                                 <div class="row">                                
                                     <div class="form-group col-md-6 mb-4">
                                         <input type="text" name="name" class="form-control" id="name" placeholder="Full name" required>
@@ -102,9 +103,16 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
     
-                                    <div class="form-group col-md-12 mb-5">
+                                    <div class="form-group col-md-12 mb-4">
                                         <textarea name="message" class="form-control" id="message" rows="4" placeholder="Write Message" required></textarea>
                                         <div class="help-block with-errors"></div>
+                                    </div>
+
+                                    <!-- Cloudflare Turnstile CAPTCHA -->
+                                    <div class="form-group col-md-12 mb-4">
+                                        <?php if (!empty($turnstile_site_key)): ?>
+                                        <div class="cf-turnstile" data-sitekey="<?= esc($turnstile_site_key); ?>" data-theme="light"></div>
+                                        <?php endif; ?>
                                     </div>
     
                                     <div class="col-md-12">

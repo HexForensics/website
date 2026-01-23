@@ -77,6 +77,7 @@
                 <div class="report-theft-form wow fadeInUp" data-wow-delay="0.5s">
                     <div class="contact-form" style="background: #ffffff; padding: 40px; border-radius: 10px; box-shadow: 0 5px 30px rgba(0,0,0,0.1);">
                         <form id="reportTheftForm" method="post" action="<?= base_url('submit-theft-report');?>">
+                            <?= csrf_field() ?>
                             <div class="row">
                                 <!-- Your Name -->
                                 <div class="form-group col-md-6 mb-4 allow-copy">
@@ -130,6 +131,13 @@
                                     <label for="evidence_links" style="font-weight: 600; margin-bottom: 8px; display: block;">Evidence Links (Optional)</label>
                                     <textarea name="evidence_links" id="evidence_links" class="form-control allow-copy" rows="3" placeholder="Links to screenshots or other evidence (e.g., Dropbox, Google Drive links)" style="padding: 12px 15px; border: 1px solid #ddd; border-radius: 5px; width: 100%; resize: vertical;"></textarea>
                                     <small style="color: #666; font-size: 0.875rem;">Upload screenshots to a cloud service and paste the links here</small>
+                                </div>
+
+                                <!-- Cloudflare Turnstile CAPTCHA -->
+                                <div class="form-group col-md-12 mb-4">
+                                    <?php if (!empty($turnstile_site_key)): ?>
+                                    <div class="cf-turnstile" data-sitekey="<?= esc($turnstile_site_key); ?>" data-theme="light"></div>
+                                    <?php endif; ?>
                                 </div>
 
                                 <!-- Submit Button -->
