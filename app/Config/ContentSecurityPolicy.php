@@ -54,7 +54,7 @@ class ContentSecurityPolicy extends BaseConfig
      *
      * @var list<string>|string
      */
-    public array $scriptSrc = ['self', 'https://cdnjs.cloudflare.com'];
+    public array $scriptSrc = ['self', 'https://cdnjs.cloudflare.com', 'https://challenges.cloudflare.com', 'unsafe-inline'];
 
     /**
      * Lists allowed stylesheets' URLs.
