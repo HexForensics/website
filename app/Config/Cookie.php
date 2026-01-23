@@ -53,8 +53,9 @@ class Cookie extends BaseConfig
      * --------------------------------------------------------------------------
      *
      * Cookie will only be set if a secure HTTPS connection exists.
+     * Automatically set based on environment: true in production, false in development.
      */
-    public bool $secure = true;
+    public bool $secure = false;
 
     /**
      * --------------------------------------------------------------------------
@@ -64,6 +65,16 @@ class Cookie extends BaseConfig
      * Cookie will only be accessible via HTTP(S) (no JavaScript).
      */
     public bool $httponly = true;
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        // Enable secure cookies only in production
+        if (ENVIRONMENT === 'production') {
+            $this->secure = true;
+        }
+    }
 
     /**
      * --------------------------------------------------------------------------
