@@ -34,6 +34,17 @@
 		prependTo : '.responsive-menu'
 	});
 
+	/* Toggle header background when mobile menu opens/closes */
+	$(document).on('click', '.slicknav_btn', function() {
+		setTimeout(function() {
+			if ($('.slicknav_btn').hasClass('slicknav_open')) {
+				$('header.main-header').addClass('menu-open');
+			} else {
+				$('header.main-header').removeClass('menu-open');
+			}
+		}, 10);
+	});
+
 	if($("a[href='#top']").length){
 		$(document).on("click", "a[href='#top']", function() {
 			$("html, body").animate({ scrollTop: 0 }, "slow");

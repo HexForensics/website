@@ -236,8 +236,7 @@ body{
 .btn-default{
 	position: relative;
 	display: inline-block;
-    background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-secondary-color) 50%, var(--accent-color) 100%);
-    background-size: 200% auto;
+    background: var(--accent-color);
     border-radius: 100px;
     color: var(--white-color);
     font-size: 18px;
@@ -252,7 +251,7 @@ body{
 }
 
 .btn-default:hover{
-	background-position: right center;
+	background: var(--accent-secondary-color);
 }
 
 .btn-default::before{
@@ -600,6 +599,8 @@ header.main-header .header-sticky{
 	position: relative;
 	top: 0;
 	z-index: 100;
+	background-color: transparent;
+	transition: background-color 0.3s ease-in-out;
 }
 
 header.main-header .header-sticky.hide{
@@ -617,6 +618,12 @@ header.main-header .header-sticky.active{
     transform: translateY(0);
 	background-color: red;
 	border-bottom: 1px solid var(--divider-color);
+}
+
+/* Change header background when mobile menu is open */
+header.main-header.menu-open .header-sticky,
+header.main-header.menu-open .header-sticky.active {
+	background-color: var(--accent-secondary-color) !important;
 }
 
 .navbar{
@@ -748,7 +755,7 @@ header.main-header .header-sticky.active{
 }
 
 .slicknav_btn{
-	background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-secondary-color) 50%, var(--accent-color) 100%);
+	background: var(--accent-secondary-color);
 	padding: 0;
 	display: flex;
 	align-items: center;
@@ -757,7 +764,7 @@ header.main-header .header-sticky.active{
 	height: 42px;
 	margin: 0;
 	border-radius: 12px;
-	box-shadow: 0 4px 15px rgba(166, 124, 0, 0.3), 0 2px 8px rgba(0, 34, 57, 0.2);
+	/* box-shadow: 0 4px 15px rgba(166, 124, 0, 0.3), 0 2px 8px rgba(0, 34, 57, 0.2); */
 	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	position: relative;
 	overflow: hidden;
@@ -776,7 +783,7 @@ header.main-header .header-sticky.active{
 
 .slicknav_btn:hover {
 	transform: translateY(-2px);
-	box-shadow: 0 8px 25px rgba(166, 124, 0, 0.4), 0 4px 12px rgba(0, 34, 57, 0.3);
+	/* box-shadow: 0 8px 25px rgba(166, 124, 0, 0.4), 0 4px 12px rgba(0, 34, 57, 0.3); */
 }
 
 .slicknav_btn:hover::before {
@@ -792,7 +799,7 @@ header.main-header .header-sticky.active{
 	display: block;
 	width: 24px;
 	height: 3px;
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9));
+	background: #fff;
 	border-radius: 6px;
 	margin: 4px auto !important;
 	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -831,7 +838,7 @@ header.main-header .header-sticky.active{
 	position: absolute;
     width: 100%;
 	padding: 0;
-	background: linear-gradient(90.15deg, var(--accent-color) 1.15%, var(--accent-secondary-color) 98.84%);
+	background: var(--accent-secondary-color);
 }
 
 .slicknav_menu ul{

@@ -410,8 +410,8 @@
         <!-- Header Start -->
         <div class="" style="position: absolute; width: 100%">
             <header class="main-header">
-                <div class="header-sticky" style="background-color: transparent !important">
-                    <nav class="navbar navbar-expand-lg" style="background-color: transparent !important">
+                <div class="header-sticky">
+                    <nav class="navbar navbar-expand-lg">
                         <div class="container">
 
                             <!-- Logo Start -->
@@ -444,7 +444,7 @@
 
                                 <!-- Header Btn Start -->
                                 <div class="header-btn">
-                                    <a href="<?= base_url('get-in-touch');?>" class="btn-default">contact</a>
+                                    <a href="<?= base_url('get-in-touch');?>" class="btn-default" style="background: var(--accent-secondary-color);">contact</a>
                                 </div>
                                 <!-- Header Btn End -->
                             </div>
