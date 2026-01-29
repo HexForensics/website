@@ -18,8 +18,8 @@
         <meta property="og:url" content="<?= current_url(); ?>">
         <meta property="og:title" content="<?= $page_title; ?> - Hex Forensics">
         <meta property="og:description" content="<?= isset($meta_description) ? esc($meta_description) : 'Expert Digital Forensics, Cyber Security, and Investigation Services in Nigeria and Africa'; ?>">
-        <meta property="og:image" content="<?= base_url('assets/logo/og-image.png'); ?>">
-        <meta property="og:image:secure_url" content="<?= base_url('assets/logo/og-image.png'); ?>">
+        <meta property="og:image" content="<?= base_url('assets/logo/logo-darktext.png'); ?>">
+        <meta property="og:image:secure_url" content="<?= base_url('assets/logo/logo-darktext.png'); ?>">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
@@ -32,7 +32,7 @@
         <meta name="twitter:url" content="<?= current_url(); ?>">
         <meta name="twitter:title" content="<?= $page_title; ?> - Hex Forensics">
         <meta name="twitter:description" content="<?= isset($meta_description) ? esc($meta_description) : 'Expert Digital Forensics, Cyber Security, and Investigation Services in Nigeria and Africa'; ?>">
-        <meta name="twitter:image" content="<?= base_url('assets/logo/og-image.png'); ?>">
+        <meta name="twitter:image" content="<?= base_url('assets/logo/logo-darktext.png'); ?>">
         <meta name="twitter:image:alt" content="Hex Forensics - Digital Forensics & Cyber Security Experts">
         
         <!-- Page Title -->
@@ -40,7 +40,7 @@
         <!-- Favicon Icon -->
         <link rel="icon" type="image/png" href="<?= base_url('assets/logo/favicon.png');?>">
         <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/logo/favicon.png');?>">
-        <link rel="apple-touch-icon" href="<?= base_url('assets/logo/logo.png');?>">
+        <link rel="apple-touch-icon" href="<?= base_url('assets/logo/favicon.png');?>">
         
         <!-- JSON-LD Structured Data -->
         <script type="application/ld+json">
@@ -49,7 +49,7 @@
             "@type": "Organization",
             "name": "Hex Forensics",
             "url": "<?= base_url(); ?>",
-            "logo": "<?= base_url('assets/logo/logo.png'); ?>",
+            "logo": "<?= base_url('assets/logo/logo-darktext.png'); ?>",
             "description": "Expert Digital Forensics, Cyber Security, Fraud Investigation, and Intelligence Services",
             "address": {
                 "@type": "PostalAddress",
@@ -71,7 +71,7 @@
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Hex Forensics",
-            "image": "<?= base_url('assets/logo/logo.png'); ?>",
+            "image": "<?= base_url('assets/logo/logo-darktext.png'); ?>",
             "url": "<?= base_url(); ?>",
             "telephone": "+234-90-6677-9939",
             "email": "info@hexforensics.com",
