@@ -18,12 +18,13 @@
 
     <!-- Animated Background Start -->
     <div class="hero-bg-video">
-        <!-- Animated WebP Image for Desktop -->
-        <img src="<?= base_url('assets/hero/crimeintro-lightwieght.webp');?>"
-            alt="Hero Background" id="myVideo" loading="eager" 
-            class="desktop-only"
-            style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
-        >
+        <!-- Hero Video for Desktop -->
+        <video autoplay muted loop playsinline id="myVideo" class="desktop-only"
+            style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+            <source src="<?= base_url('assets/video/hero-cropped.mp4');?>" type="video/mp4">
+            <!-- Fallback image if video fails to load -->
+            <img src="<?= base_url('assets/hero/poster.png');?>" alt="Hero Background" style="width: 100%; height: 100%; object-fit: cover;">
+        </video>
         <!-- Static Image and js animation for Mobile -->
         <img src="<?= base_url('assets/hero/poster.png');?>"
             alt="Hero Background" id="myVideoMobile" loading="eager"
@@ -38,7 +39,7 @@
         
         <!-- Fallback for browsers that don't support WebP -->
         <picture style="display: none;">
-            <source srcset="<?= base_url('assets/hero/crimeintro-lightwieght.webp');?>" type="image/webp">
+            <!-- <source srcset="<?= base_url('assets/hero/crimeintro-lightwieght.webp');?>" type="image/webp"> -->
             <img src="<?= base_url('assets/hero/poster.png');?>" alt="Hero Background">
         </picture>
         
