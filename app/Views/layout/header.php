@@ -187,6 +187,15 @@
 
             /* Tablet (Medium Screens) */
             @media only screen and (max-width: 991px) and (min-width: 768px) {
+                .home-page-hero {
+                    min-height: 100vh;
+                }
+                
+                .home-hero-content{
+                    margin-top: 15vh !important;
+                    padding-top: 15px !important;
+                }
+                
                 /* Show hamburger-only items in tablet */
                 .hamburger-only {
                     display: block !important;
@@ -209,15 +218,24 @@
                     background: #b37f1f !important;
                     transform: translateY(-2px) !important;
                 }
+                
+                .home-page-hero {
+                    min-height: 100vh;
+                }
+                
+                .home-hero-content{
+                    margin-top: 5vh;
+                }
             }
 
             /* Phone (Small Screens) */
             @media only screen and (max-width: 767px) {
                 .home-page-hero {
-                    height: 99vh
+                    min-height: 100vh;
                 }
                 .home-hero-content{
-                    margin-top: 20vh;
+                    margin-top: 10vh;
+                    padding: 0 20px;
                 }
                 .about-image-big{
                     min-height: 150px
