@@ -10,12 +10,6 @@
         <?php endif; ?>
         <!-- our Blog Section End -->
 
-        <!-- Partner Logos Section Start -->
-        <?php  if (!in_array($page_title, ["Partners"])): ?>
-            <?= view("page_sections/trusted_by");?>
-        <?php endif;?>
-        <!-- Partner Logos Section End -->
-
         <div style="width: 100%; height: 4px; background-color: #ca912a"></div>
         
         <!-- Main Footer Section Start -->
@@ -60,7 +54,7 @@
                                 <li><a href="<?= base_url('partners');?>">Partners</a></li>
                                 <li><a href="<?= base_url('get-in-touch');?>">Contact</a></li>
                                 <li><a href="<?= base_url('report-theft');?>" style="color: #ca912a; filter: brightness(1.2);">
-                                    <i class="fa-solid fa-shield-halved" style="margin-right: 5px;"></i>Report Theft
+                                    <i class="fa-solid fa-shield-halved" style="margin-right: 5px;"></i>Report Content Theft
                                 </a></li>
                             </ul>
                         </div>

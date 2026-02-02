@@ -7,7 +7,13 @@
         <!-- Section Title Start -->
         <div class="section-title text-center" style="margin-bottom: 50px;">
             <!-- <h3 class="wow fadeInUp" style="color: #ca912a;">PARTNERSHIPS</h3> -->
-            <h2 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff; font-size: 4rem;">We Are Trusted By Organizations Worldwide</h2>
+            <h2 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff; font-size: 3rem;">
+                <span style="background: none; -webkit-text-fill-color: inherit;">
+                    <span style="white-space: nowrap; background: none; -webkit-text-fill-color: inherit;">Trusted by Top Agencies,</span> 
+                    <span style="white-space: nowrap; background: none; -webkit-text-fill-color: inherit;">Empowered by Partnerships,</span> 
+                    <span style="white-space: nowrap; background: none; -webkit-text-fill-color: inherit;">Proven Worldwide</span>
+                </span>
+            </h2>
             <p class="wow fadeInUp" data-wow-delay="0.4s" style="color: rgba(255, 255, 255, 0.7); max-width: 700px; margin: 0 auto;">
                 Hex Forensics collaborates with government agencies, defense institutions, and industry leaders around the world.
             </p>
@@ -107,7 +113,7 @@
                              style="max-height: 100%; max-width: 100%; object-fit: contain; filter: grayscale(10%) brightness(1.0); transition: all 0.3s ease;">
                     </div>
                     <p style="color: rgba(255, 255, 255, 0.5); font-size: 14px; margin-top: 12px; text-align: center; transition: all 0.3s ease;">
-                        <?= $partner['name'];?> <br>
+                        <!-- <?= $partner['name'];?> <br> -->
                         <?= $partner['country'];?>
                     </p>
                 </div>
