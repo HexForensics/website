@@ -18,3 +18,10 @@ Brand Guidelines:
 1. Logo Usage:
    - Always use the official Hex Forensics logo.
    - Maintain clear space around the logo to ensure visibility.
+2. Brand Voice:
+   - Professional and authoritative tone.
+   - Clear and concise communication.
+3. Brand Theme/messaging:
+   - Intelligence gathering.
+   - Investigation.
+   - Emphasize trust, expertise, and reliability.
