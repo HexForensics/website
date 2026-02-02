@@ -98,7 +98,7 @@
                             
                             <!-- About Footer Button Start -->
                             <div class="about-footer-btn">
-                                <a href="<?= base_url('get-in-touch');?>" class="btn-default">contact us</a>
+                                <a href="<?= base_url('get-in-touch');?>" class="btn-default" style="border-radius: 5px;">contact us</a>
                             </div>
                             <!-- About Footer Button End -->
                         </div>

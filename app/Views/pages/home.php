@@ -70,7 +70,7 @@
                     <div class="hero-content-body wow fadeInUp" data-wow-delay="0.6s">
                         <!-- Hero Button Start -->
                         <div class="hero-btn">
-                            <a href="<?= base_url('get-in-touch');?>" class="btn-default" style="background: linear-gradient(90.15deg, var(--accent-color) 1.15%, var(--accent-secondary-color) 98.84%);">Book a Consultation</a>
+                            <a href="<?= base_url('get-in-touch');?>" class="btn-default" style="background: linear-gradient(90.15deg, var(--accent-color) 1.15%, var(--accent-secondary-color) 98.84%); border-radius: 5px;">Book a Consultation</a>
                         </div>
                         <!-- Hero Button End -->
 
@@ -186,6 +186,10 @@
 <?= False ? view("page_sections/why_choose_us") : "";?>
 <!-- Why Choose Us Section End -->
 
+<!-- CTA Home Section Start -->
+<?= view("page_sections/cta_home");?>
+<!-- CTA Home Section End -->
+
 <!-- Our Testimonials Section Start -->
 <?= False ? view("page_sections/testimonials") : "";?>
 <!-- Our Testimonials Section End -->
@@ -201,8 +205,8 @@
         background: rgba(0, 0, 32, 0.9);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(202, 145, 42, 0.3);
-        border-radius: 12px;
-        padding: 20px;
+        border-radius: 19px;
+        padding: 10px;
         z-index: 10;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     }
