@@ -98,6 +98,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <!-- Font Awesome Preload -->
+        <link rel="preload" href="<?= base_url('assets/webfonts/fa-solid-900.woff2');?>" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="<?= base_url('assets/webfonts/fa-regular-400.woff2');?>" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="<?= base_url('assets/webfonts/fa-brands-400.woff2');?>" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="<?= base_url('assets/webfonts/fa-v4compatibility.woff2');?>" as="font" type="font/woff2" crossorigin>
         <!-- Bootstrap Css -->
         <link href="<?= base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet" media="screen">
         <!-- SlickNav Css -->

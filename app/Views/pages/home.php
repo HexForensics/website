@@ -19,9 +19,10 @@
     <!-- Animated Background Start -->
     <div class="hero-bg-video">
         <!-- Hero Video for Desktop -->
-        <video autoplay muted loop playsinline preload="metadata" poster="<?= base_url('assets/hero/ascii-poster.png');?>" id="myVideo"
+        <video autoplay muted loop playsinline preload="none" poster="<?= base_url('assets/hero/ascii-poster.png');?>" id="myVideo"
             style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
-            <source src="<?= base_url('assets/video/ascii-preview.mp4');?>" type="video/mp4">
+            <source data-src="<?= base_url('assets/video/ascii-preview.webm');?>" type="video/webm">
+            <source data-src="<?= base_url('assets/video/ascii-preview.mp4');?>" type="video/mp4">
             <!-- Fallback image if video fails to load -->
             <img src="<?= base_url('assets/hero/ascii-poster.png');?>" alt="Hero Background" style="width: 100%; height: 100%; object-fit: cover;">
         </video>
@@ -139,6 +140,33 @@
         crossorigin="anonymous" 
         referrerpolicy="no-referrer"></script>
 <script src="<?= base_url('assets/js/particle-effect.js');?>"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('myVideo');
+        if (!video) return;
+
+        const sources = video.querySelectorAll('source[data-src]');
+        const loadVideo = () => {
+            sources.forEach(source => {
+                if (!source.src) {
+                    source.src = source.dataset.src;
+                }
+            });
+            video.load();
+            const playPromise = video.play();
+            if (playPromise && typeof playPromise.catch === 'function') {
+                playPromise.catch(() => {});
+            }
+        };
+
+        if (typeof requestAnimationFrame === 'function') {
+            requestAnimationFrame(() => setTimeout(loadVideo, 0));
+        } else {
+            setTimeout(loadVideo, 0);
+        }
+    });
+</script>
 
 <!-- <div style="width: 100%; height: 8px; background-color: #ca912a"></div> -->
 
