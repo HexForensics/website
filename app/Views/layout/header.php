@@ -192,7 +192,7 @@
                 }
                 
                 .home-hero-content{
-                    margin-top: 15vh !important;
+                    margin-top: 8vh !important;
                     padding-top: 15px !important;
                 }
                 
@@ -462,7 +462,7 @@
 
                                 <!-- Header Btn Start -->
                                 <div class="header-btn">
-                                    <a href="<?= base_url('get-in-touch');?>" class="btn-default" style="background: var(--accent-secondary-color);">contact</a>
+                                    <a href="<?= base_url('get-in-touch');?>" class="btn-default" style="background: rgba(0, 0, 32, 0.9); border: 1px solid rgba(202, 145, 42, 0.3);">contact</a>
                                 </div>
                                 <!-- Header Btn End -->
                             </div>

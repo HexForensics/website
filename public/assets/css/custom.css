@@ -914,7 +914,7 @@ header.main-header.menu-open .header-sticky.active {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: linear-gradient(270deg, rgba(1, 5, 53, 0.38) 43.57%, rgba(1, 5, 53, 0.8) 100%);
+	background: rgba(0, 0, 32, 0.7);
 	width: 100%;
 	height: 100%;
 	z-index: 1;
