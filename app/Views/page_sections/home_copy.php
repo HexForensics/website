@@ -7,7 +7,7 @@
                     <!-- About Image Box Start -->
                     <div class="about-image-box about-img-1">
                         <figure class="image-anime reveal">
-                            <img class="about-image-big" src="<?= base_url('assets/pictures/hex_team.png');?>" alt="" style="border-radius: 25px;">
+                            <img class="about-image-big" src="<?= base_url('assets/pictures/hex-team.png');?>" alt="" style="border-radius: 25px;">
                         </figure>
                     </div>
                     <!-- About Image Box End -->
