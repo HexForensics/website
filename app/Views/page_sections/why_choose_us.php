@@ -97,7 +97,7 @@
                             <img src="<?= base_url('assets/images/icon-why-choose-counter-3.svg');?>" alt="">
                         </div>
                         <div class="why-choose-counter-content">
-                            <h3><span class="counter">60</span>+</h3>
+                            <h3><span class="counter">30</span>+</h3>
                             <p>happy customer<span style="text-transform: lowercase">(s)</span></p>
                         </div>
                     </div>
