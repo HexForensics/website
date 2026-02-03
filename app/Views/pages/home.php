@@ -1,17 +1,8 @@
 <!-- Hero Section Start -->
 <style>
-#particle-effect-container {
-  opacity: 0.3;
-  mix-blend-mode: screen;
-}
 .hero-video .container {
   position: relative;
   z-index: 2;
-}
-@media (min-width: 768px) {
-  #particle-effect-container {
-    display: none !important;
-  }
 }
 </style>
 <div class="hero hero-video home-page-hero">
@@ -32,10 +23,6 @@
             class="mobile-only"
             style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; display: none;"
         > -->
-        <div id="particle-effect-container" 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;"
-        >
-        </div>
 
         
         <!-- Fallback for browsers that don't support WebP -->
@@ -133,13 +120,6 @@
 <!-- Partner Logos Section Start -->
 <?= view("page_sections/trusted_by");?>
 <!-- Partner Logos Section End -->
-
-<!-- Particle Effect Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js" 
-        integrity="sha512-VJuc9M9GyHz+6aJ/ICed88LLa8fYSDoM07ADPXr1k/dSQ3eECCOCQvP96Cs6ytJYKmftN1yq3+yxg4vJ4uE/mg==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer"></script>
-<script src="<?= base_url('assets/js/particle-effect.js');?>"></script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
