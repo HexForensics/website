@@ -6,8 +6,11 @@
                 <div class="about-us-content">
                     <!-- Section Title Start -->
                     <div class="section-title">
-                        <h3 class="wow fadeInUp" style="display: block; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px;">About HEX FORENSICS</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque" style="color: #fff; font-size: 3rem; line-height: 1.2; margin-bottom: 30px;"><span>Protecting Data, Uncovering Truth</span></h2>
+                        <span style="display: block; color: rgba(202, 145, 42, 0.9); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; display: flex; align-items: center; gap: 10px;">
+                            HEX FORENSICS
+                            <span style="width: 30px; height: 1px; background: rgba(202, 145, 42, 0.9);"></span>
+                        </span>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque" style="color: #fff; font-size: 2rem; line-height: 1.2; margin-bottom: 30px;"><span>Protecting Data, Uncovering Truth</span></h2>
                         <p class="wow fadeInUp" data-wow-delay="0.4s" style="color: #fff; font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px;"> 
                             HEX Forensics is Nigeria's trusted partner in cybersecurity and digital forensics. We empower businesses, law enforcement agencies, and legal professionals with cutting-edge investigative technology, comprehensive security solutions, and expert analysis that stands up in court.
                         </p>

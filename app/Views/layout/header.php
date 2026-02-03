@@ -431,7 +431,7 @@
         <!-- Preloader End -->
 
         <!-- Header Start -->
-        <div class="" style="position: absolute; width: 100%">
+        <div class="" style="position: absolute; width: 100%; padding-top: 20px;">
             <header class="main-header">
                 <div class="header-sticky">
                     <nav class="navbar navbar-expand-lg">

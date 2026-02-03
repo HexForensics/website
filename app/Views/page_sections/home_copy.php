@@ -7,7 +7,7 @@
                     <!-- About Image Box Start -->
                     <div class="about-image-box about-img-1">
                         <figure class="image-anime reveal">
-                            <img class="about-image-big" src="<?= base_url('assets/pictures/street.jpg');?>" alt="" style="border-radius: 25px;">
+                            <img class="about-image-big" src="<?= base_url('assets/pictures/hex_team.png');?>" alt="" style="border-radius: 25px;">
                         </figure>
                     </div>
                     <!-- About Image Box End -->
@@ -40,8 +40,8 @@
                 <!-- About Us Image End -->
             </div>
 
+            <!-- About Us Content Start -->
             <div class="col-lg-6">
-                <!-- About Us Content Start -->
                 <div class="about-us-content">
                     <!-- Section Title Start -->
                     <div class="section-title">
@@ -51,8 +51,8 @@
                     </div>
                     <!-- Section Title End -->
 
-                    <!-- About Us Body Start -->
-                    <div class="about-us-body wow fadeInUp" data-wow-delay="0.6s" style="display: none">
+                    <!-- About Us - 24/7 Support -->
+                    <div class="about-us-body wow fadeInUp" data-wow-delay="0.6s" style="display:none">
                         <!-- About Us Body Image Start -->
                         <div class="about-us-body-img">
                             <figure class="image-anime">
@@ -68,7 +68,7 @@
                         </div>
                         <!-- About Us Body Content End -->
                     </div>
-                    <!-- About Us Body End -->
+                    <!-- About Us - 24/7 Support End -->
 
                     <!-- About Us Footer Start -->
                     <div class="about-us-footer wow fadeInUp" data-wow-delay="0.8s">
@@ -106,8 +106,9 @@
                     </div>
                     <!-- About Us Footer End -->
                 </div>
-                <!-- About Us Content End -->
             </div>
+            <!-- About Us Content End -->
+
         </div>
     </div>
 </div>

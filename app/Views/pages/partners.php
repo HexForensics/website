@@ -1,14 +1,21 @@
 <!-- Page Header Start -->
-<div class="page-header parallaxie" style="background-image: url(<?= base_url('assets/pictures/street.jpg')?>); padding-top: 80px; padding-bottom: 80px">
-    <div class="container" style="padding-top: 8vh">
-        <div class="row align-items-center">
+<div class="page-header" style="background-image: none; padding: 150px 0 80px 0; position: relative;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 32, 0.7); pointer-events: none;"></div>
+    <!-- Glowing Accent Line -->
+    <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(202, 145, 42, 0.8), transparent);"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row">
             <div class="col-lg-12">
                 <!-- Page Header Box Start -->
                 <div class="page-header-box">
-                    <!-- <h1 class="wow fadeInUp" data-cursor="-opaque">Our Partners</h1>
-                    <p class="wow fadeInUp" data-wow-delay="0.2s" style="color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin-top: 15px;">
-                        Hex Forensics partners with government agencies, defense institutions, technology providers, and training organizations worldwide. Our strategic alliances enable us to deliver cutting-edge forensic solutions and comprehensive security services.
-                    </p> -->
+                    <h1 class="text-anime-style-3" style="color: #fff; text-transform: uppercase; letter-spacing: 1px;">GLOBAL PARTNERSHIPS</h1>
+                    <nav class="wow fadeInUp">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="<?= base_url();?>" style="color: #ca912a">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" style="color: rgba(255,255,255,0.7)">Partners</li>
+                        </ol>
+                    </nav>
                 </div>
                 <!-- Page Header Box End -->
             </div>
@@ -17,17 +24,26 @@
 </div>
 <!-- Page Header End -->
 
+<!-- <p class="wow fadeInUp" data-wow-delay="0.2s" style="color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin-top: 15px;">
+                        Hex Forensics partners with government agencies, defense institutions, technology providers, and training organizations worldwide. Our strategic alliances enable us to deliver cutting-edge forensic solutions and comprehensive security services.
+                    </p> -->
+
 <!-- Partners Introduction Section Start -->
 <div class="partners-intro" style="padding: 80px 0; background-color: #000020;">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8 offset-lg-2">
                 <div class="section-title text-center">
-                    <h3 class="wow fadeInUp" style="color: #ca912a;">GLOBAL PARTNERSHIPS</h3>
-                    <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
+                    <!-- <h3 class="wow fadeInUp" style="color: #ca912a;">GLOBAL PARTNERSHIPS</h3> -->
+                    <!-- <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
                         Collaborating with <span>Industry Leaders</span>
-                    </h2>
-                    <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin-top: 20px; font-size: 1.1rem; color: rgba(255, 255, 255, 0.8);">
+                    </h2> -->
+                    <span style="display: block; color: rgba(202, 145, 42, 0.9); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <span style="width: 30px; height: 1px; background: rgba(202, 145, 42, 0.9);"></span>
+                        Collaborating with <span>Industry Leaders</span>
+                        <span style="width: 30px; height: 1px; background: rgba(202, 145, 42, 0.9);"></span>
+                    </span>
+                    <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin-top: 20px; font-size: 1.7rem; color: rgba(255, 255, 255, 0.8);">
                         <!-- color: #666; -->
                         Excellence is proven through action, not words. Over the years, Hex Forensics has built strategic partnerships with leading government agencies, defense institutions, and technology providers worldwide. These collaborations demonstrate our commitment to delivering world-class digital forensics, cybersecurity, and investigative solutions that protect communities and solve complex crimes.
                     </p>
