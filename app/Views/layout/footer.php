@@ -13,8 +13,15 @@
         <div style="width: 100%; height: 4px; background-color: #ca912a"></div>
         
         <!-- Main Footer Section Start -->
-        <footer class="main-footer" style="padding: 0px 0 0 0;">
-            <div class="container pt-5">
+        <footer class="main-footer" style="padding: 0px 0 0 0; position: relative; overflow: hidden;">
+            <!-- Abstract Background Elements -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: 
+                radial-gradient(circle at 10% 10%, rgba(202, 145, 42, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(202, 145, 42, 0.1) 0%, transparent 40%),
+                repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.05) 10px, rgba(255, 255, 255, 0.05) 11px);
+            pointer-events: none;"></div>
+
+            <div class="container pt-5" style="position: relative; z-index: 2;">
                 <div class="row"  style="padding-bottom: 20px;">
                     <div class="col-lg-12">
                         <!-- Footer Header Start -->

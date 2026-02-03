@@ -7,14 +7,14 @@
         <!-- Section Title Start -->
         <div class="section-title text-center" style="margin-bottom: 50px;">
             <!-- <h3 class="wow fadeInUp" style="color: #ca912a;">PARTNERSHIPS</h3> -->
-            <h2 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff; font-size: 3rem;">
+            <h2 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff; font-size: 2.5rem;">
                 <span style="background: none; -webkit-text-fill-color: inherit;">
                     <span style="white-space: nowrap; background: none; -webkit-text-fill-color: inherit;">Trusted by Top Agencies,</span> 
                     <span style="white-space: nowrap; background: none; -webkit-text-fill-color: inherit;">Empowered by Partnerships,</span> 
                     <span style="white-space: nowrap; background: none; -webkit-text-fill-color: inherit;">Proven Worldwide</span>
                 </span>
             </h2>
-            <p class="wow fadeInUp" data-wow-delay="0.4s" style="color: rgba(255, 255, 255, 0.7); max-width: 700px; margin: 0 auto;">
+            <p class="wow fadeInUp" data-wow-delay="0.4s" style="color: rgba(255, 255, 255, 0.7); max-width: 750px; margin: 0 auto;">
                 Hex Forensics collaborates with government agencies, defense institutions, and industry leaders around the world.
             </p>
         </div>
@@ -107,7 +107,7 @@
             ?>
                 <div class="partner-logo-item"
                    style="display: inline-flex; flex-direction: column; align-items: center; margin: 0 40px; text-decoration: none; transition: all 0.3s ease; pointer-events: none;">
-                    <div class="logo-container" style="height: 120px; width: 240px; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(255, 255, 255, 0.05); border-radius: 10px; transition: all 0.3s ease;">
+                    <div class="logo-container" style="height: 100px; width: 200px; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(255, 255, 255, 0.05); border-radius: 10px; transition: all 0.3s ease;">
                         <img src="<?= base_url('assets/partners/' . $partner['file']);?>" 
                              alt="<?= $partner['name'];?> logo" 
                              style="max-height: 100%; max-width: 100%; object-fit: contain; filter: grayscale(10%) brightness(1.0); transition: all 0.3s ease;">

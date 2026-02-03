@@ -1,11 +1,5 @@
 <!-- CTA Section Start -->
-<div class="cta-box wow fadeInUp" data-wow-delay="0.2s" style="padding: 100px 0; position: relative; background: #000020; overflow: hidden;">
-    <!-- Abstract Background Elements -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.1; background: 
-        radial-gradient(circle at 10% 10%, rgba(202, 145, 42, 0.2) 0%, transparent 40%),
-        radial-gradient(circle at 90% 90%, rgba(202, 145, 42, 0.15) 0%, transparent 40%),
-        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.03) 10px, rgba(255, 255, 255, 0.03) 11px);
-    pointer-events: none;"></div>
+<div class="cta-box wow" data-wow-delay="0.2s" style="padding: 100px 0; position: relative; background: #000020; overflow: hidden;">
     
     <!-- Glowing Accent Line -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(202, 145, 42, 0.5), transparent);"></div>

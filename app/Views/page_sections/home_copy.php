@@ -28,14 +28,6 @@
                     </div>
                     <!-- About Image Box Start -->
 
-                    <!-- Get Free Security Circle Start -->
-                    <div class="get-free-security-circle" style="display: none">
-                        <a href="contact.html">
-                        <!-- <img src="<?= base_url('assets/images/get-free-security-circle.svg');?>" alt=""> -->
-                        <img src="<?= base_url('assets/logo/favicon.png');?>" alt="">
-                        </a>
-                    </div>
-                    <!-- Get Free Security Circle End -->
                 </div>
                 <!-- About Us Image End -->
             </div>
