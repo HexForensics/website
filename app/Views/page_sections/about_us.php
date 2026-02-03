@@ -94,7 +94,7 @@
                         <div class="about-footer-content" style="width: 100%; text-align: center;">
                             <!-- About Footer Button Start -->
                             <div class="about-footer-btn">
-                                <a href="<?= base_url('get-in-touch');?>" class="btn-default" style="background: linear-gradient(to right, #A67C00 0%, #002239 50%, #A67C00 100%); background-size: 200% auto; padding: 18px 50px; border-radius: 50px; color: #fff; text-decoration: none; display: inline-block; font-weight: 600; font-size: 1.1rem; transition: all 0.4s ease-in-out; box-shadow: 0 5px 20px rgba(83, 78, 64, 0.3);">Get In Touch With Us</a>
+                                <a href="<?= base_url('get-in-touch');?>" class="btn-default" style="border-radius: 5px;">Get In Touch With Us</a>
                             </div>
                             <!-- About Footer Button End -->
                         </div>

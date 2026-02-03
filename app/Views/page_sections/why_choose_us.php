@@ -73,7 +73,7 @@
                             <img src="<?= base_url('assets/images/icon-why-choose-counter-1.svg');?>" alt="">
                         </div>
                         <div class="why-choose-counter-content">
-                            <h3><span class="counter">25</span>+</h3>
+                            <h3><span class="counter">6</span>+</h3>
                             <p>Years Experience</p>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                             <img src="<?= base_url('assets/images/icon-why-choose-counter-2.svg');?>" alt="">
                         </div>
                         <div class="why-choose-counter-content">
-                            <h3><span class="counter">15</span>K</h3>
+                            <h3><span class="counter">100</span>+</h3>
                             <p>project completed</p>
                         </div>
                     </div>

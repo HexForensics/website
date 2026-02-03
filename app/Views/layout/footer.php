@@ -163,6 +163,11 @@
         </footer>
         <!-- Main Footer Section End -->
         
+        <!-- Back to Top Button -->
+        <a href="#top" id="back-to-top" class="back-to-top-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+
         <!-- Jquery Library File -->
         <script src="<?= base_url('assets/js/jquery-3.7.1.min.js');?>"></script>
         <!-- Bootstrap js file -->
@@ -194,6 +199,20 @@
         <script src="<?= base_url('assets/js/wow.min.js');?>"></script>
         <!-- Main Custom js file -->
         <script src="<?= base_url('assets/js/function.js');?>"></script>
+        
+        <!-- Back to Top Script -->
+        <script>
+            $(document).ready(function() {
+                var $backToTop = $('#back-to-top');
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 300) {
+                        $backToTop.addClass('show');
+                    } else {
+                        $backToTop.removeClass('show');
+                    }
+                });
+            });
+        </script>
         
         <!-- Footer Responsive Styles -->
         <style>
@@ -287,6 +306,37 @@
                 .footer-copyright-text p {
                     text-align: left !important;
                 }
+            }
+            .back-to-top-btn {
+                position: fixed;
+                bottom: 110px;
+                right: 30px;
+                z-index: 99;
+                font-size: 20px;
+                width: 45px;
+                height: 45px;
+                background-color: #ca912a;
+                color: white !important;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 45px;
+                transition: all 0.3s ease;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(20px);
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+                display: block;
+            }
+
+            .back-to-top-btn.show {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
+            .back-to-top-btn:hover {
+                background-color: #fff;
+                color: #ca912a !important;
             }
         </style>
     </body>

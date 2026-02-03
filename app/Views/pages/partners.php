@@ -40,10 +40,10 @@
                     </h2> -->
                     <span style="display: block; color: rgba(202, 145, 42, 0.9); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; display: flex; align-items: center; justify-content: center; gap: 10px;">
                         <span style="width: 30px; height: 1px; background: rgba(202, 145, 42, 0.9);"></span>
-                        Collaborating with <span>Industry Leaders</span>
+                        Collaborating with Industry Leaders
                         <span style="width: 30px; height: 1px; background: rgba(202, 145, 42, 0.9);"></span>
                     </span>
-                    <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin-top: 20px; font-size: 1.7rem; color: rgba(255, 255, 255, 0.8);">
+                    <p class="wow fadeInUp" data-wow-delay="0.4s" style="margin-top: 20px; font-size: clamp(1rem, 4vw, 1.7rem); color: rgba(255, 255, 255, 0.8);">
                         <!-- color: #666; -->
                         Excellence is proven through action, not words. Over the years, Hex Forensics has built strategic partnerships with leading government agencies, defense institutions, and technology providers worldwide. These collaborations demonstrate our commitment to delivering world-class digital forensics, cybersecurity, and investigative solutions that protect communities and solve complex crimes.
                     </p>
