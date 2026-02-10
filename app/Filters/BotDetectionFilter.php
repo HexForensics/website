@@ -85,6 +85,18 @@ class BotDetectionFilter implements FilterInterface
         'contentking',
         'screaming frog',
         
+        // AI training crawlers
+        'gptbot',
+        'chatgpt-user',
+        'ccbot',
+        'anthropic-ai',
+        'claude-web',
+        'bytespider',
+        'cohere-ai',
+        'diffbot',
+        'perplexitybot',
+        'youbot',
+        
         // Empty or suspicious
         '-', // Single dash UA
     ];

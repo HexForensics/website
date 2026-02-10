@@ -403,7 +403,7 @@
             });
 
             // Content Protection: Console Warning
-            console.log('%c⚠️ STOP!', 'color: red; font-size: 50px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);');
+            console.log('%c⚠️ WARNING!', 'color: red; font-size: 50px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);');
             console.log('%cThis is a browser feature intended for developers only.', 'font-size: 18px; font-weight: bold; color: #ca912a;');
             console.log('%cUnauthorized copying, scraping, or extraction of website content is strictly prohibited.', 'font-size: 16px; color: #fff;');
             console.log('%cViolations may result in legal action.', 'font-size: 16px; color: #ff6b6b; font-weight: bold;');
