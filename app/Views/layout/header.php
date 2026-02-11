@@ -134,7 +134,6 @@
                 user-select: none;
             }
 
-            /* Content Protection: Allow text selection in whitelisted areas */
             input[type="text"],
             input[type="email"],
             input[type="tel"],
@@ -151,7 +150,6 @@
                 user-select: text !important;
             }
 
-            /* Content Protection: Image Protection */
             img {
                 pointer-events: none;
                 -webkit-user-drag: none;
@@ -294,123 +292,7 @@
     <!-- <body style="background-color: #000910"> -->
     <body style="background-color: #000020">
 
-        <!-- Content Protection Start -->
-        <script nonce="{csp-script-nonce}">
-            // Whitelist: Elements where copy/paste is allowed
-            const allowCopySelectors = [
-                'input[type="text"]',
-                'input[type="email"]',
-                'input[type="tel"]',
-                'input[type="number"]',
-                'input[type="password"]',
-                'textarea',
-                '.allow-copy',
-                '.contact-info',
-                '.email-address',
-                '.phone-number'
-            ];
-
-            // Check if element or its parent is whitelisted
-            function isWhitelisted(element) {
-                if (!element) return false;
-                
-                // Check if element itself matches whitelist
-                for (let selector of allowCopySelectors) {
-                    if (element.matches && element.matches(selector)) {
-                        return true;
-                    }
-                }
-                
-                // Check if any parent element matches whitelist
-                let parent = element.parentElement;
-                while (parent) {
-                    for (let selector of allowCopySelectors) {
-                        if (parent.matches && parent.matches(selector)) {
-                            return true;
-                        }
-                    }
-                    parent = parent.parentElement;
-                }
-                
-                return false;
-            }
-
-            // Content Protection: Disable Right-Click (with whitelist)
-            document.addEventListener('contextmenu', function(e) {
-                if (!isWhitelisted(e.target)) {
-                    e.preventDefault();
-                    return false;
-                }
-            });
-
-            // Content Protection: Disable Keyboard Shortcuts (with whitelist)
-            document.addEventListener('keydown', function(e) {
-                // Allow shortcuts in whitelisted elements
-                if (isWhitelisted(e.target)) {
-                    return true;
-                }
-
-                // Disable Ctrl+C (Copy)
-                if (e.ctrlKey && e.key === 'c') {
-                    e.preventDefault();
-                    return false;
-                }
-                // Disable Ctrl+A (Select All)
-                if (e.ctrlKey && e.key === 'a') {
-                    e.preventDefault();
-                    return false;
-                }
-                // Disable Ctrl+X (Cut)
-                if (e.ctrlKey && e.key === 'x') {
-                    e.preventDefault();
-                    return false;
-                }
-                // Disable Ctrl+V (Paste) - only block outside whitelisted areas
-                if (e.ctrlKey && e.key === 'v') {
-                    e.preventDefault();
-                    return false;
-                }
-                // Disable Ctrl+U (View Source)
-                if (e.ctrlKey && e.key === 'u') {
-                    e.preventDefault();
-                    return false;
-                }
-                // Disable Ctrl+S (Save Page)
-                if (e.ctrlKey && e.key === 's') {
-                    e.preventDefault();
-                    return false;
-                }
-                // Disable F12 (Developer Tools)
-                if (e.key === 'F12') {
-                    e.preventDefault();
-                    return false;
-                }
-                // Disable Ctrl+Shift+I (Inspect Element)
-                if (e.ctrlKey && e.shiftKey && e.key === 'I') {
-                    e.preventDefault();
-                    return false;
-                }
-                // Disable Ctrl+Shift+J (Console)
-                if (e.ctrlKey && e.shiftKey && e.key === 'J') {
-                    e.preventDefault();
-                    return false;
-                }
-                // Disable Ctrl+Shift+C (Inspect Element)
-                if (e.ctrlKey && e.shiftKey && e.key === 'C') {
-                    e.preventDefault();
-                    return false;
-                }
-            });
-
-            // Content Protection: Console Warning
-            console.log('%c⚠️ WARNING!', 'color: red; font-size: 50px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);');
-            console.log('%cThis is a browser feature intended for developers only.', 'font-size: 18px; font-weight: bold; color: #ca912a;');
-            console.log('%cUnauthorized copying, scraping, or extraction of website content is strictly prohibited.', 'font-size: 16px; color: #fff;');
-            console.log('%cViolations may result in legal action.', 'font-size: 16px; color: #ff6b6b; font-weight: bold;');
-            console.log('%c© ' + new Date().getFullYear() + ' Hex Forensics - All Rights Reserved', 'font-size: 14px; color: #888; margin-top: 10px;');
-            console.log('%cIf you are interested in our services or partnerships, please contact us at info@hexforensics.com', 'font-size: 14px; color: #4CAF50; font-style: italic;');
-        </script>
-        <!-- End Content Protection -->
+        <script nonce="{csp-script-nonce}"><?= generate_content_protection_script() ?></script>
 
         <!-- Background Audio Start-->
         <!-- <audio id="backgroundAudio" autoplay loop preload="auto" style="display: none;">
