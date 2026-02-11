@@ -90,31 +90,39 @@
                         <!-- Section Title End -->
 
                         <div class="member-contact-form contact-form">
-                            <form id="contactForm" action="<?= base_url('submit-contact'); ?>" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.2s">
+                            <!-- Form Status Message -->
+                            <div id="formAlert" style="display:none; padding: 15px 20px; border-radius: 5px; margin-bottom: 20px; font-weight: 500;"></div>
+
+                            <form id="contactForm" action="<?= base_url('submit-contact'); ?>" method="POST" class="wow fadeInUp" data-wow-delay="0.2s">
                                 <?= csrf_field() ?>
                                 <div class="row">                                
                                     <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Full name" required>
+                                        <label for="name" style="font-weight: 600; margin-bottom: 8px; display: block;">Full Name *</label>
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
     
                                     <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter Your Phone Number" required>
+                                        <label for="phone" style="font-weight: 600; margin-bottom: 8px; display: block;">Phone Number</label>
+                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="+234 123 456 7890">
                                         <div class="help-block with-errors"></div>
                                     </div>
     
                                     <div class="form-group col-md-6 mb-4">
-                                        <input type="email" name ="email" class="form-control" id="email" placeholder="Enter Your E-mail address" required>
+                                        <label for="email" style="font-weight: 600; margin-bottom: 8px; display: block;">Email Address *</label>
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="your@email.com" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
     
                                     <div class="form-group col-md-6 mb-4">
-                                        <input type="text" name="title" class="form-control" id="title" placeholder="Request Title" required>
+                                        <label for="title" style="font-weight: 600; margin-bottom: 8px; display: block;">Subject *</label>
+                                        <input type="text" name="title" class="form-control" id="title" placeholder="How can we help?" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
     
                                     <div class="form-group col-md-12 mb-4">
-                                        <textarea name="message" class="form-control" id="message" rows="4" placeholder="Write Message" required></textarea>
+                                        <label for="message" style="font-weight: 600; margin-bottom: 8px; display: block;">Message *</label>
+                                        <textarea name="message" class="form-control" id="message" rows="4" placeholder="Tell us more about your inquiry..." required></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
@@ -126,12 +134,105 @@
                                     </div>
     
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn-default btn-highlighted"><span>submit message</span></button>
-                                        <div id="msgSubmit" class="h3 hidden"></div>
+                                        <button type="submit" id="submitBtn" class="btn-default btn-highlighted">
+                                            <span id="btnText">submit message</span>
+                                            <span id="btnSpinner" style="display:none;">
+                                                <i class="fa-solid fa-spinner fa-spin" style="margin-right: 8px;"></i> Sending...
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
                             </form>
                         </div>
+
+                        <!-- Validation Error Styling -->
+                        <style>
+                            .help-block.with-errors {
+                                color: #dc3545;
+                                font-size: 0.875rem;
+                                margin-top: 0.25rem;
+                                display: block;
+                                font-weight: 500;
+                            }
+                            .form-control.error {
+                                border-color: #dc3545 !important;
+                            }
+                            .form-control:invalid:not(:placeholder-shown) {
+                                border-color: #dc3545;
+                            }
+                        </style>
+
+                        <!-- AJAX Form Handler -->
+                        <script nonce="{csp-script-nonce}">
+                        (function() {
+                            var form = document.getElementById('contactForm');
+                            var btn = document.getElementById('submitBtn');
+                            var btnText = document.getElementById('btnText');
+                            var btnSpinner = document.getElementById('btnSpinner');
+                            var alertBox = document.getElementById('formAlert');
+
+                            form.addEventListener('submit', function(e) {
+                                e.preventDefault();
+
+                                // Hide previous alert
+                                alertBox.style.display = 'none';
+
+                                // Show spinner, disable button
+                                btnText.style.display = 'none';
+                                btnSpinner.style.display = 'inline';
+                                btn.disabled = true;
+                                btn.style.opacity = '0.7';
+
+                                var formData = new FormData(form);
+
+                                fetch(form.action, {
+                                    method: 'POST',
+                                    body: formData,
+                                    headers: {
+                                        'X-Requested-With': 'XMLHttpRequest'
+                                    }
+                                })
+                                .then(function(response) { return response.json(); })
+                                .then(function(data) {
+                                    // Show message
+                                    alertBox.style.display = 'block';
+                                    alertBox.textContent = data.message;
+
+                                    if (data.status === 'success') {
+                                        alertBox.style.background = '#d4edda';
+                                        alertBox.style.color = '#155724';
+                                        alertBox.style.border = '1px solid #c3e6cb';
+                                        form.reset();
+                                    } else {
+                                        alertBox.style.background = '#f8d7da';
+                                        alertBox.style.color = '#721c24';
+                                        alertBox.style.border = '1px solid #f5c6cb';
+                                    }
+
+                                    // Refresh CSRF token from server response
+                                    if (data.csrf_token) {
+                                        var csrfField = form.querySelector('input[name="csrf_test_name"]');
+                                        if (csrfField) csrfField.value = data.csrf_token;
+                                    }
+                                })
+                                .catch(function() {
+                                    alertBox.style.display = 'block';
+                                    alertBox.textContent = 'A network error occurred. Please check your connection and try again.';
+                                    alertBox.style.background = '#f8d7da';
+                                    alertBox.style.color = '#721c24';
+                                    alertBox.style.border = '1px solid #f5c6cb';
+                                    alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                })
+                                .finally(function() {
+                                    // Restore button
+                                    btnText.style.display = 'inline';
+                                    btnSpinner.style.display = 'none';
+                                    btn.disabled = false;
+                                    btn.style.opacity = '1';
+                                });
+                            });
+                        })();
+                        </script>
                     </div>
                 </div>
                 <!-- Page Contact Box End -->

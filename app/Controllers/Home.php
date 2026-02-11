@@ -95,7 +95,8 @@ class Home extends BaseController
             if (!$verification['success']) {
                 return $this->response->setJSON([
                     'status' => 'error',
-                    'message' => $verification['error'] ?? 'CAPTCHA verification failed.'
+                    'message' => $verification['error'] ?? 'CAPTCHA verification failed.',
+                    'csrf_token' => csrf_hash()
                 ]);
             }
         }
@@ -110,9 +111,14 @@ class Home extends BaseController
         ];
 
         if (!$this->validate($rules)) {
+            $errors = $this->validator->getErrors();
+            $errorMessage = 'Please check your input: ' . implode(', ', $errors);
+            
             return $this->response->setJSON([
                 'status' => 'error',
-                'message' => 'Please check your input and try again.'
+                'message' => $errorMessage,
+                'errors' => $errors,
+                'csrf_token' => csrf_hash()
             ]);
         }
 
@@ -132,7 +138,7 @@ class Home extends BaseController
         // Use company email as From, user email as Reply-To
         $email->setFrom('info@hexforensics.com', 'Hex Forensics Website');
         $email->setReplyTo($data['email'], $data['name']);
-        $email->setTo('info@hexforensics.com');
+        $email->setTo('ossi@hexforensics.com'); // Temporarily changed for testing
         $email->setSubject('Contact Form: ' . $data['title']);
         
         $message = "
@@ -152,13 +158,23 @@ class Home extends BaseController
         if ($email->send()) {
             return $this->response->setJSON([
                 'status' => 'success',
-                'message' => 'Message sent successfully! We will get back to you soon.'
+                'message' => 'Message sent successfully! We will get back to you soon.',
+                'csrf_token' => csrf_hash()
             ]);
         } else {
-            log_message('error', 'Contact form email failed: ' . $email->printDebugger(['headers']));
+            $debugInfo = $email->printDebugger(['headers', 'subject', 'body']);
+            log_message('error', 'Contact form email failed: ' . $debugInfo);
+            
+            // In development, show debug info
+            $errorMsg = 'Sorry, there was an error sending your message. Please try again or email us directly.';
+            if (ENVIRONMENT === 'development') {
+                $errorMsg .= ' (Check writable/logs/ for details)';
+            }
+            
             return $this->response->setJSON([
                 'status' => 'error',
-                'message' => 'Sorry, there was an error sending your message. Please try again or email us directly.'
+                'message' => $errorMsg,
+                'csrf_token' => csrf_hash()
             ]);
         }
     }
@@ -216,7 +232,7 @@ class Home extends BaseController
         // Use company email as From, reporter email as Reply-To
         $email->setFrom('info@hexforensics.com', 'Hex Forensics - Theft Report');
         $email->setReplyTo($data['reporter_email'], $data['reporter_name']);
-        $email->setTo('info@hexforensics.com');
+        $email->setTo('ossi@hexforensics.com'); // Temporarily changed for testing
         $email->setSubject('Content Theft Report - ' . $data['theft_type']);
         
         $message = "
