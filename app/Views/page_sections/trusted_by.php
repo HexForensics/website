@@ -98,6 +98,12 @@
                     'name' => 'Exterro',
                     'country' => 'USA',
                     'url' => 'https://www.exterro.com'
+                ],
+                [
+                    'file' => 'phonexia-largex5-logo.png',
+                    'name' => 'Phonexia',
+                    'country' => 'Czech Republic',
+                    'url' => 'https://www.phonexia.com'
                 ]
             ];
             

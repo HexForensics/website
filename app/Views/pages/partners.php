@@ -229,6 +229,14 @@
                                     'description' => 'Information security certifications and training',
                                     'url' => 'https://www.mile2.com',
                                     'specialty' => 'Training & Certification'
+                                ],
+                                [
+                                    'file' => 'phonexia-largex5-logo.png',
+                                    'name' => 'Phonexia',
+                                    'country' => 'Czech Republic',
+                                    'description' => 'Advanced speech recognition and voice analytics solutions',
+                                    'url' => 'https://www.phonexia.com',
+                                    'specialty' => 'Voice Analytics'
                                 ]
                             ];
                             
